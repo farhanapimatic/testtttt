@@ -84,16 +84,16 @@ Body (_EventDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 8,
+  "code": 139,
   "copyright": "copyright",
   "data": {
-    "count": 8,
-    "limit": 8,
-    "offset": 8,
+    "count": 139,
+    "limit": 139,
+    "offset": 139,
     "results": [
       {
         "characters": {
-          "available": 8,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -102,10 +102,10 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 8
+          "returned": 139
         },
         "comics": {
-          "available": 172,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -113,10 +113,10 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 172
+          "returned": 139
         },
         "creators": {
-          "available": 172,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -125,12 +125,12 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 172
+          "returned": 139
         },
         "description": "description",
-        "end": "2017-07-26T12:22:30.127834Z",
-        "id": 80,
-        "modified": "2017-07-26T12:22:30.1434984Z",
+        "end": "2017-07-26T12:23:52.0488793Z",
+        "id": 139,
+        "modified": "2017-07-26T12:23:52.0488793Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -141,7 +141,7 @@ Body (_EventDataWrapper_)
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -149,11 +149,11 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
-        "start": "2017-07-26T12:22:30.1434984Z",
+        "start": "2017-07-26T12:23:52.0488793Z",
         "stories": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -162,7 +162,7 @@ Body (_EventDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "thumbnail": {
           "extension": "extension",
@@ -177,7 +177,7 @@ Body (_EventDataWrapper_)
         ]
       }
     ],
-    "total": 80
+    "total": 139
   },
   "etag": "etag",
   "status": "status"
@@ -226,16 +226,16 @@ Body (_EventDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 80,
+  "code": 139,
   "copyright": "copyright",
   "data": {
-    "count": 80,
-    "limit": 80,
-    "offset": 80,
+    "count": 139,
+    "limit": 139,
+    "offset": 139,
     "results": [
       {
         "characters": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -244,10 +244,10 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "comics": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -255,10 +255,10 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "creators": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -267,12 +267,12 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "description": "description",
-        "end": "2017-07-26T12:22:30.1434984Z",
-        "id": 80,
-        "modified": "2017-07-26T12:22:30.1434984Z",
+        "end": "2017-07-26T12:23:52.0488793Z",
+        "id": 139,
+        "modified": "2017-07-26T12:23:52.0488793Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -283,7 +283,7 @@ Body (_EventDataWrapper_)
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -291,11 +291,11 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
-        "start": "2017-07-26T12:22:30.1434984Z",
+        "start": "2017-07-26T12:23:52.0488793Z",
         "stories": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -304,7 +304,7 @@ Body (_EventDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "thumbnail": {
           "extension": "extension",
@@ -319,7 +319,7 @@ Body (_EventDataWrapper_)
         ]
       }
     ],
-    "total": 80
+    "total": 139
   },
   "etag": "etag",
   "status": "status"
@@ -368,16 +368,16 @@ Body (_EventDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 80,
+  "code": 139,
   "copyright": "copyright",
   "data": {
-    "count": 80,
-    "limit": 80,
-    "offset": 80,
+    "count": 139,
+    "limit": 139,
+    "offset": 139,
     "results": [
       {
         "characters": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -386,10 +386,10 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "comics": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -397,10 +397,10 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "creators": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -409,12 +409,12 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "description": "description",
-        "end": "2017-07-26T12:22:30.1434984Z",
-        "id": 80,
-        "modified": "2017-07-26T12:22:30.1434984Z",
+        "end": "2017-07-26T12:23:52.0488793Z",
+        "id": 139,
+        "modified": "2017-07-26T12:23:52.0488793Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -425,7 +425,7 @@ Body (_EventDataWrapper_)
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -433,11 +433,11 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
-        "start": "2017-07-26T12:22:30.1434984Z",
+        "start": "2017-07-26T12:23:52.0488793Z",
         "stories": {
-          "available": 80,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -446,7 +446,7 @@ Body (_EventDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 80
+          "returned": 139
         },
         "thumbnail": {
           "extension": "extension",
@@ -461,7 +461,7 @@ Body (_EventDataWrapper_)
         ]
       }
     ],
-    "total": 80
+    "total": 139
   },
   "etag": "etag",
   "status": "status"
@@ -510,16 +510,16 @@ Body (_EventDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 122,
+  "code": 139,
   "copyright": "copyright",
   "data": {
-    "count": 122,
-    "limit": 122,
-    "offset": 122,
+    "count": 139,
+    "limit": 139,
+    "offset": 139,
     "results": [
       {
         "characters": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -528,10 +528,10 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "comics": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -539,10 +539,10 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "creators": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -551,12 +551,12 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "description": "description",
-        "end": "2017-07-26T12:22:30.1590844Z",
-        "id": 122,
-        "modified": "2017-07-26T12:22:30.1590844Z",
+        "end": "2017-07-26T12:23:52.0488793Z",
+        "id": 139,
+        "modified": "2017-07-26T12:23:52.0488793Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -567,7 +567,7 @@ Body (_EventDataWrapper_)
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -575,11 +575,11 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
-        "start": "2017-07-26T12:22:30.1590844Z",
+        "start": "2017-07-26T12:23:52.0488793Z",
         "stories": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -588,7 +588,7 @@ Body (_EventDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "thumbnail": {
           "extension": "extension",
@@ -603,7 +603,7 @@ Body (_EventDataWrapper_)
         ]
       }
     ],
-    "total": 122
+    "total": 139
   },
   "etag": "etag",
   "status": "status"
@@ -652,16 +652,16 @@ Body (_EventDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 122,
+  "code": 139,
   "copyright": "copyright",
   "data": {
-    "count": 122,
-    "limit": 122,
-    "offset": 122,
+    "count": 139,
+    "limit": 139,
+    "offset": 139,
     "results": [
       {
         "characters": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -670,10 +670,10 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "comics": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -681,10 +681,10 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "creators": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -693,12 +693,12 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "description": "description",
-        "end": "2017-07-26T12:22:30.1590844Z",
-        "id": 122,
-        "modified": "2017-07-26T12:22:30.1590844Z",
+        "end": "2017-07-26T12:23:52.0488793Z",
+        "id": 139,
+        "modified": "2017-07-26T12:23:52.0488793Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -709,7 +709,7 @@ Body (_EventDataWrapper_)
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -717,11 +717,11 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
-        "start": "2017-07-26T12:22:30.1590844Z",
+        "start": "2017-07-26T12:23:52.0488793Z",
         "stories": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -730,7 +730,7 @@ Body (_EventDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "thumbnail": {
           "extension": "extension",
@@ -745,7 +745,7 @@ Body (_EventDataWrapper_)
         ]
       }
     ],
-    "total": 122
+    "total": 139
   },
   "etag": "etag",
   "status": "status"
@@ -779,7 +779,7 @@ Body (_Event_)
 ```
 {
   "characters": {
-    "available": 122,
+    "available": 139,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -788,10 +788,10 @@ Body (_Event_)
         "role": "role"
       }
     ],
-    "returned": 122
+    "returned": 139
   },
   "comics": {
-    "available": 122,
+    "available": 139,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -799,10 +799,10 @@ Body (_Event_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 122
+    "returned": 139
   },
   "creators": {
-    "available": 122,
+    "available": 139,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -811,12 +811,12 @@ Body (_Event_)
         "role": "role"
       }
     ],
-    "returned": 122
+    "returned": 139
   },
   "description": "description",
-  "end": "2017-07-26T12:22:30.1590844Z",
-  "id": 122,
-  "modified": "2017-07-26T12:22:30.1590844Z",
+  "end": "2017-07-26T12:23:52.0488793Z",
+  "id": 139,
+  "modified": "2017-07-26T12:23:52.0488793Z",
   "next": {
     "name": "name",
     "resourceURI": "resourceURI"
@@ -827,7 +827,7 @@ Body (_Event_)
   },
   "resourceURI": "resourceURI",
   "series": {
-    "available": 122,
+    "available": 139,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -835,11 +835,11 @@ Body (_Event_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 122
+    "returned": 139
   },
-  "start": "2017-07-26T12:22:30.1590844Z",
+  "start": "2017-07-26T12:23:52.0488793Z",
   "stories": {
-    "available": 122,
+    "available": 139,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -848,7 +848,7 @@ Body (_Event_)
         "type": "type"
       }
     ],
-    "returned": 122
+    "returned": 139
   },
   "thumbnail": {
     "extension": "extension",
@@ -902,16 +902,16 @@ Body (_EventDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 122,
+  "code": 139,
   "copyright": "copyright",
   "data": {
-    "count": 122,
-    "limit": 122,
-    "offset": 122,
+    "count": 139,
+    "limit": 139,
+    "offset": 139,
     "results": [
       {
         "characters": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -920,10 +920,10 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 122
+          "returned": 139
         },
         "comics": {
-          "available": 122,
+          "available": 139,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -931,10 +931,10 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "creators": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -943,12 +943,12 @@ Body (_EventDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "description": "description",
-        "end": "2017-07-26T12:22:30.1590844Z",
-        "id": 122,
-        "modified": "2017-07-26T12:22:30.1590844Z",
+        "end": "2017-07-26T12:23:52.0645034Z",
+        "id": 181,
+        "modified": "2017-07-26T12:23:52.0645034Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -959,7 +959,7 @@ Body (_EventDataWrapper_)
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -967,11 +967,11 @@ Body (_EventDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
-        "start": "2017-07-26T12:22:30.1590844Z",
+        "start": "2017-07-26T12:23:52.0645034Z",
         "stories": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -980,7 +980,7 @@ Body (_EventDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "thumbnail": {
           "extension": "extension",
@@ -995,7 +995,7 @@ Body (_EventDataWrapper_)
         ]
       }
     ],
-    "total": 122
+    "total": 181
   },
   "etag": "etag",
   "status": "status"
@@ -1048,16 +1048,16 @@ Body (_CharacterDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 122,
+  "code": 181,
   "copyright": "copyright",
   "data": {
-    "count": 122,
-    "limit": 122,
-    "offset": 122,
+    "count": 181,
+    "limit": 181,
+    "offset": 181,
     "results": [
       {
         "comics": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1065,11 +1065,11 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "description": "description",
         "events": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1077,14 +1077,14 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
-        "id": 122,
-        "modified": "2017-07-26T12:22:30.1590844Z",
+        "id": 181,
+        "modified": "2017-07-26T12:23:52.0645034Z",
         "name": "name",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1092,10 +1092,10 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "stories": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1104,7 +1104,7 @@ Body (_CharacterDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "thumbnail": {
           "extension": "extension",
@@ -1118,7 +1118,7 @@ Body (_CharacterDataWrapper_)
         ]
       }
     ],
-    "total": 122
+    "total": 181
   },
   "etag": "etag",
   "status": "status"
@@ -1166,16 +1166,16 @@ Body (_CharacterDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 122,
+  "code": 181,
   "copyright": "copyright",
   "data": {
-    "count": 122,
-    "limit": 122,
-    "offset": 122,
+    "count": 181,
+    "limit": 181,
+    "offset": 181,
     "results": [
       {
         "comics": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1183,11 +1183,11 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "description": "description",
         "events": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1195,14 +1195,14 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
-        "id": 122,
-        "modified": "2017-07-26T12:22:30.1590844Z",
+        "id": 181,
+        "modified": "2017-07-26T12:23:52.0645034Z",
         "name": "name",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1210,10 +1210,10 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "stories": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1222,7 +1222,7 @@ Body (_CharacterDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "thumbnail": {
           "extension": "extension",
@@ -1236,7 +1236,7 @@ Body (_CharacterDataWrapper_)
         ]
       }
     ],
-    "total": 122
+    "total": 181
   },
   "etag": "etag",
   "status": "status"
@@ -1284,16 +1284,16 @@ Body (_CharacterDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 122,
+  "code": 181,
   "copyright": "copyright",
   "data": {
-    "count": 122,
-    "limit": 122,
-    "offset": 122,
+    "count": 181,
+    "limit": 181,
+    "offset": 181,
     "results": [
       {
         "comics": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1301,11 +1301,11 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "description": "description",
         "events": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1313,14 +1313,14 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
-        "id": 122,
-        "modified": "2017-07-26T12:22:30.1590844Z",
+        "id": 181,
+        "modified": "2017-07-26T12:23:52.0645034Z",
         "name": "name",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1328,10 +1328,10 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "stories": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1340,7 +1340,7 @@ Body (_CharacterDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "thumbnail": {
           "extension": "extension",
@@ -1354,7 +1354,7 @@ Body (_CharacterDataWrapper_)
         ]
       }
     ],
-    "total": 122
+    "total": 181
   },
   "etag": "etag",
   "status": "status"
@@ -1402,16 +1402,16 @@ Body (_CharacterDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 122,
+  "code": 181,
   "copyright": "copyright",
   "data": {
-    "count": 122,
-    "limit": 122,
-    "offset": 122,
+    "count": 181,
+    "limit": 181,
+    "offset": 181,
     "results": [
       {
         "comics": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1419,11 +1419,11 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "description": "description",
         "events": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1431,14 +1431,14 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
-        "id": 122,
-        "modified": "2017-07-26T12:22:30.1590844Z",
+        "id": 181,
+        "modified": "2017-07-26T12:23:52.0645034Z",
         "name": "name",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1446,10 +1446,10 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "stories": {
-          "available": 122,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1458,7 +1458,7 @@ Body (_CharacterDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 122
+          "returned": 181
         },
         "thumbnail": {
           "extension": "extension",
@@ -1472,7 +1472,7 @@ Body (_CharacterDataWrapper_)
         ]
       }
     ],
-    "total": 30
+    "total": 181
   },
   "etag": "etag",
   "status": "status"
@@ -1506,7 +1506,7 @@ Body (_Character_)
 ```
 {
   "comics": {
-    "available": 30,
+    "available": 181,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -1514,11 +1514,11 @@ Body (_Character_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 30
+    "returned": 181
   },
   "description": "description",
   "events": {
-    "available": 30,
+    "available": 181,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -1526,14 +1526,14 @@ Body (_Character_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 30
+    "returned": 181
   },
-  "id": 30,
-  "modified": "2017-07-26T12:22:30.1747095Z",
+  "id": 181,
+  "modified": "2017-07-26T12:23:52.0645034Z",
   "name": "name",
   "resourceURI": "resourceURI",
   "series": {
-    "available": 30,
+    "available": 181,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -1541,10 +1541,10 @@ Body (_Character_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 30
+    "returned": 181
   },
   "stories": {
-    "available": 30,
+    "available": 181,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -1553,7 +1553,7 @@ Body (_Character_)
         "type": "type"
       }
     ],
-    "returned": 30
+    "returned": 181
   },
   "thumbnail": {
     "extension": "extension",
@@ -1605,16 +1605,16 @@ Body (_CharacterDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 30,
+  "code": 181,
   "copyright": "copyright",
   "data": {
-    "count": 30,
-    "limit": 30,
-    "offset": 30,
+    "count": 181,
+    "limit": 181,
+    "offset": 181,
     "results": [
       {
         "comics": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1622,11 +1622,11 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "description": "description",
         "events": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1634,14 +1634,14 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
-        "id": 30,
-        "modified": "2017-07-26T12:22:30.1747095Z",
+        "id": 181,
+        "modified": "2017-07-26T12:23:52.0645034Z",
         "name": "name",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1649,10 +1649,10 @@ Body (_CharacterDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "stories": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1661,7 +1661,7 @@ Body (_CharacterDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "thumbnail": {
           "extension": "extension",
@@ -1675,7 +1675,7 @@ Body (_CharacterDataWrapper_)
         ]
       }
     ],
-    "total": 30
+    "total": 181
   },
   "etag": "etag",
   "status": "status"
@@ -1723,16 +1723,16 @@ Body (_StoryDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 30,
+  "code": 181,
   "copyright": "copyright",
   "data": {
-    "count": 30,
-    "limit": 30,
-    "offset": 30,
+    "count": 181,
+    "limit": 181,
+    "offset": 181,
     "results": [
       {
         "characters": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1741,10 +1741,10 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "comics": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1752,10 +1752,10 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "creators": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1764,11 +1764,11 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "description": "description",
         "events": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1776,17 +1776,17 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
-        "id": 30,
-        "modified": "2017-07-26T12:22:30.1747095Z",
+        "id": 181,
+        "modified": "2017-07-26T12:23:52.0645034Z",
         "originalissue": {
           "name": "name",
           "resourceURI": "resourceURI"
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1794,7 +1794,7 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "thumbnail": {
           "extension": "extension",
@@ -1804,7 +1804,7 @@ Body (_StoryDataWrapper_)
         "type": "type"
       }
     ],
-    "total": 30
+    "total": 181
   },
   "etag": "etag",
   "status": "status"
@@ -1851,16 +1851,16 @@ Body (_StoryDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 30,
+  "code": 181,
   "copyright": "copyright",
   "data": {
-    "count": 30,
-    "limit": 30,
-    "offset": 30,
+    "count": 181,
+    "limit": 181,
+    "offset": 181,
     "results": [
       {
         "characters": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1869,10 +1869,10 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "comics": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1880,10 +1880,10 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "creators": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1892,11 +1892,11 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "description": "description",
         "events": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1904,17 +1904,17 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
-        "id": 30,
-        "modified": "2017-07-26T12:22:30.1747095Z",
+        "id": 181,
+        "modified": "2017-07-26T12:23:52.0645034Z",
         "originalissue": {
           "name": "name",
           "resourceURI": "resourceURI"
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1922,7 +1922,7 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "thumbnail": {
           "extension": "extension",
@@ -1932,7 +1932,7 @@ Body (_StoryDataWrapper_)
         "type": "type"
       }
     ],
-    "total": 30
+    "total": 181
   },
   "etag": "etag",
   "status": "status"
@@ -1979,16 +1979,16 @@ Body (_StoryDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 30,
+  "code": 181,
   "copyright": "copyright",
   "data": {
-    "count": 30,
-    "limit": 30,
-    "offset": 30,
+    "count": 181,
+    "limit": 181,
+    "offset": 181,
     "results": [
       {
         "characters": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -1997,10 +1997,10 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "comics": {
-          "available": 30,
+          "available": 181,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2008,10 +2008,10 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 181
         },
         "creators": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2020,11 +2020,11 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "description": "description",
         "events": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2032,17 +2032,17 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
-        "id": 30,
-        "modified": "2017-07-26T12:22:30.1747095Z",
+        "id": 90,
+        "modified": "2017-07-26T12:23:52.0801308Z",
         "originalissue": {
           "name": "name",
           "resourceURI": "resourceURI"
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2050,7 +2050,7 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "thumbnail": {
           "extension": "extension",
@@ -2060,7 +2060,7 @@ Body (_StoryDataWrapper_)
         "type": "type"
       }
     ],
-    "total": 30
+    "total": 90
   },
   "etag": "etag",
   "status": "status"
@@ -2107,16 +2107,16 @@ Body (_StoryDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 30,
+  "code": 90,
   "copyright": "copyright",
   "data": {
-    "count": 30,
-    "limit": 30,
-    "offset": 30,
+    "count": 90,
+    "limit": 90,
+    "offset": 90,
     "results": [
       {
         "characters": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2125,10 +2125,10 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "comics": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2136,10 +2136,10 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "creators": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2148,11 +2148,11 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "description": "description",
         "events": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2160,17 +2160,17 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
-        "id": 30,
-        "modified": "2017-07-26T12:22:30.1747095Z",
+        "id": 90,
+        "modified": "2017-07-26T12:23:52.0801308Z",
         "originalissue": {
           "name": "name",
           "resourceURI": "resourceURI"
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2178,7 +2178,7 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "thumbnail": {
           "extension": "extension",
@@ -2188,7 +2188,7 @@ Body (_StoryDataWrapper_)
         "type": "type"
       }
     ],
-    "total": 30
+    "total": 90
   },
   "etag": "etag",
   "status": "status"
@@ -2235,16 +2235,16 @@ Body (_StoryDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 30,
+  "code": 90,
   "copyright": "copyright",
   "data": {
-    "count": 30,
-    "limit": 30,
-    "offset": 30,
+    "count": 90,
+    "limit": 90,
+    "offset": 90,
     "results": [
       {
         "characters": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2253,10 +2253,10 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "comics": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2264,10 +2264,10 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "creators": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2276,11 +2276,11 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "description": "description",
         "events": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2288,17 +2288,17 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
-        "id": 30,
-        "modified": "2017-07-26T12:22:30.1747095Z",
+        "id": 90,
+        "modified": "2017-07-26T12:23:52.0801308Z",
         "originalissue": {
           "name": "name",
           "resourceURI": "resourceURI"
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2306,7 +2306,7 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "thumbnail": {
           "extension": "extension",
@@ -2316,7 +2316,7 @@ Body (_StoryDataWrapper_)
         "type": "type"
       }
     ],
-    "total": 30
+    "total": 90
   },
   "etag": "etag",
   "status": "status"
@@ -2363,16 +2363,16 @@ Body (_StoryDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 30,
+  "code": 90,
   "copyright": "copyright",
   "data": {
-    "count": 30,
-    "limit": 30,
-    "offset": 30,
+    "count": 90,
+    "limit": 90,
+    "offset": 90,
     "results": [
       {
         "characters": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2381,10 +2381,10 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "comics": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2392,10 +2392,10 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "creators": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2404,11 +2404,11 @@ Body (_StoryDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "description": "description",
         "events": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2416,17 +2416,17 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
-        "id": 30,
-        "modified": "2017-07-26T12:22:30.1747095Z",
+        "id": 90,
+        "modified": "2017-07-26T12:23:52.0801308Z",
         "originalissue": {
           "name": "name",
           "resourceURI": "resourceURI"
         },
         "resourceURI": "resourceURI",
         "series": {
-          "available": 30,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2434,7 +2434,7 @@ Body (_StoryDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 30
+          "returned": 90
         },
         "thumbnail": {
           "extension": "extension",
@@ -2444,7 +2444,7 @@ Body (_StoryDataWrapper_)
         "type": "type"
       }
     ],
-    "total": 30
+    "total": 90
   },
   "etag": "etag",
   "status": "status"
@@ -2478,7 +2478,7 @@ Body (_Story_)
 ```
 {
   "characters": {
-    "available": 30,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2487,10 +2487,10 @@ Body (_Story_)
         "role": "role"
       }
     ],
-    "returned": 30
+    "returned": 90
   },
   "comics": {
-    "available": 30,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2498,10 +2498,10 @@ Body (_Story_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 30
+    "returned": 90
   },
   "creators": {
-    "available": 72,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2510,11 +2510,11 @@ Body (_Story_)
         "role": "role"
       }
     ],
-    "returned": 72
+    "returned": 90
   },
   "description": "description",
   "events": {
-    "available": 72,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2522,17 +2522,17 @@ Body (_Story_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 72
+    "returned": 90
   },
-  "id": 72,
-  "modified": "2017-07-26T12:22:30.1903353Z",
+  "id": 90,
+  "modified": "2017-07-26T12:23:52.0801308Z",
   "originalissue": {
     "name": "name",
     "resourceURI": "resourceURI"
   },
   "resourceURI": "resourceURI",
   "series": {
-    "available": 72,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2540,7 +2540,7 @@ Body (_Story_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 72
+    "returned": 90
   },
   "thumbnail": {
     "extension": "extension",
@@ -2583,7 +2583,7 @@ Body (_Creator_)
 ```
 {
   "comics": {
-    "available": 72,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2591,10 +2591,10 @@ Body (_Creator_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 72
+    "returned": 90
   },
   "events": {
-    "available": 72,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2602,17 +2602,17 @@ Body (_Creator_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 72
+    "returned": 90
   },
   "firstName": "firstName",
   "fullName": "fullName",
-  "id": 72,
+  "id": 90,
   "lastName": "lastName",
   "middleName": "middleName",
-  "modified": "2017-07-26T12:22:30.1903353Z",
+  "modified": "2017-07-26T12:23:52.0801308Z",
   "resourceURI": "resourceURI",
   "series": {
-    "available": 72,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2620,10 +2620,10 @@ Body (_Creator_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 72
+    "returned": 90
   },
   "stories": {
-    "available": 72,
+    "available": 90,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -2632,7 +2632,7 @@ Body (_Creator_)
         "type": "type"
       }
     ],
-    "returned": 72
+    "returned": 90
   },
   "suffix": "suffix",
   "thumbnail": {
@@ -2695,16 +2695,16 @@ Body (_CreatorDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 72,
+  "code": 90,
   "copyright": "copyright",
   "data": {
-    "count": 72,
-    "limit": 72,
-    "offset": 72,
+    "count": 90,
+    "limit": 90,
+    "offset": 90,
     "results": [
       {
         "comics": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2712,10 +2712,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "events": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2723,17 +2723,17 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "firstName": "firstName",
         "fullName": "fullName",
-        "id": 72,
+        "id": 90,
         "lastName": "lastName",
         "middleName": "middleName",
-        "modified": "2017-07-26T12:22:30.1903353Z",
+        "modified": "2017-07-26T12:23:52.0801308Z",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2741,10 +2741,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "stories": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2753,7 +2753,7 @@ Body (_CreatorDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "suffix": "suffix",
         "thumbnail": {
@@ -2768,7 +2768,7 @@ Body (_CreatorDataWrapper_)
         ]
       }
     ],
-    "total": 72
+    "total": 90
   },
   "etag": "etag",
   "status": "status"
@@ -2818,16 +2818,16 @@ Body (_CreatorDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 72,
+  "code": 90,
   "copyright": "copyright",
   "data": {
-    "count": 72,
-    "limit": 72,
-    "offset": 72,
+    "count": 90,
+    "limit": 90,
+    "offset": 90,
     "results": [
       {
         "comics": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2835,10 +2835,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "events": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2846,17 +2846,17 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "firstName": "firstName",
         "fullName": "fullName",
-        "id": 72,
+        "id": 90,
         "lastName": "lastName",
         "middleName": "middleName",
-        "modified": "2017-07-26T12:22:30.1903353Z",
+        "modified": "2017-07-26T12:23:52.0801308Z",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2864,10 +2864,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "stories": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2876,7 +2876,7 @@ Body (_CreatorDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "suffix": "suffix",
         "thumbnail": {
@@ -2891,7 +2891,7 @@ Body (_CreatorDataWrapper_)
         ]
       }
     ],
-    "total": 72
+    "total": 90
   },
   "etag": "etag",
   "status": "status"
@@ -2945,16 +2945,16 @@ Body (_CreatorDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 72,
+  "code": 90,
   "copyright": "copyright",
   "data": {
-    "count": 72,
-    "limit": 72,
-    "offset": 72,
+    "count": 90,
+    "limit": 90,
+    "offset": 90,
     "results": [
       {
         "comics": {
-          "available": 72,
+          "available": 90,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2962,10 +2962,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 90
         },
         "events": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2973,17 +2973,17 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "firstName": "firstName",
         "fullName": "fullName",
-        "id": 72,
+        "id": 253,
         "lastName": "lastName",
         "middleName": "middleName",
-        "modified": "2017-07-26T12:22:30.1903353Z",
+        "modified": "2017-07-26T12:23:52.0957544Z",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -2991,10 +2991,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "stories": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3003,7 +3003,7 @@ Body (_CreatorDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "suffix": "suffix",
         "thumbnail": {
@@ -3018,7 +3018,7 @@ Body (_CreatorDataWrapper_)
         ]
       }
     ],
-    "total": 72
+    "total": 253
   },
   "etag": "etag",
   "status": "status"
@@ -3072,16 +3072,16 @@ Body (_CreatorDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 72,
+  "code": 253,
   "copyright": "copyright",
   "data": {
-    "count": 72,
-    "limit": 72,
-    "offset": 72,
+    "count": 253,
+    "limit": 253,
+    "offset": 253,
     "results": [
       {
         "comics": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3089,10 +3089,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "events": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3100,17 +3100,17 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "firstName": "firstName",
         "fullName": "fullName",
-        "id": 72,
+        "id": 253,
         "lastName": "lastName",
         "middleName": "middleName",
-        "modified": "2017-07-26T12:22:30.1903353Z",
+        "modified": "2017-07-26T12:23:52.0957544Z",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3118,10 +3118,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "stories": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3130,7 +3130,7 @@ Body (_CreatorDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "suffix": "suffix",
         "thumbnail": {
@@ -3145,7 +3145,7 @@ Body (_CreatorDataWrapper_)
         ]
       }
     ],
-    "total": 72
+    "total": 253
   },
   "etag": "etag",
   "status": "status"
@@ -3199,16 +3199,16 @@ Body (_CreatorDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 72,
+  "code": 253,
   "copyright": "copyright",
   "data": {
-    "count": 72,
-    "limit": 72,
-    "offset": 72,
+    "count": 253,
+    "limit": 253,
+    "offset": 253,
     "results": [
       {
         "comics": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3216,10 +3216,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "events": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3227,17 +3227,17 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "firstName": "firstName",
         "fullName": "fullName",
-        "id": 72,
+        "id": 253,
         "lastName": "lastName",
         "middleName": "middleName",
-        "modified": "2017-07-26T12:22:30.1903353Z",
+        "modified": "2017-07-26T12:23:52.0957544Z",
         "resourceURI": "resourceURI",
         "series": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3245,10 +3245,10 @@ Body (_CreatorDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "stories": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3257,7 +3257,7 @@ Body (_CreatorDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 72
+          "returned": 253
         },
         "suffix": "suffix",
         "thumbnail": {
@@ -3272,7 +3272,7 @@ Body (_CreatorDataWrapper_)
         ]
       }
     ],
-    "total": 72
+    "total": 253
   },
   "etag": "etag",
   "status": "status"
@@ -3311,7 +3311,7 @@ Body (_Comic_)
 ```
 {
   "characters": {
-    "available": 72,
+    "available": 253,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -3320,7 +3320,7 @@ Body (_Comic_)
         "role": "role"
       }
     ],
-    "returned": 72
+    "returned": 253
   },
   "collectedIssues": [
     {
@@ -3335,7 +3335,7 @@ Body (_Comic_)
     }
   ],
   "creators": {
-    "available": 72,
+    "available": 253,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -3344,20 +3344,20 @@ Body (_Comic_)
         "role": "role"
       }
     ],
-    "returned": 72
+    "returned": 253
   },
   "dates": [
     {
-      "date": "2017-07-26T12:22:30.1903353Z",
+      "date": "2017-07-26T12:23:52.0957544Z",
       "type": "type"
     }
   ],
   "description": "description",
   "diamondCode": "diamondCode",
-  "digitalId": 72,
+  "digitalId": 253,
   "ean": "ean",
   "events": {
-    "available": 72,
+    "available": 253,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -3365,10 +3365,10 @@ Body (_Comic_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 72
+    "returned": 253
   },
   "format": "format",
-  "id": 72,
+  "id": 253,
   "images": [
     {
       "extension": "extension",
@@ -3377,12 +3377,12 @@ Body (_Comic_)
   ],
   "isbn": "isbn",
   "issn": "issn",
-  "issueNumber": 72,
-  "modified": "2017-07-26T12:22:30.1903353Z",
-  "pageCount": 72,
+  "issueNumber": 253,
+  "modified": "2017-07-26T12:23:52.0957544Z",
+  "pageCount": 253,
   "prices": [
     {
-      "price": 72.6279113360811,
+      "price": 253.624542562116,
       "type": "type"
     }
   ],
@@ -3392,7 +3392,7 @@ Body (_Comic_)
     "resourceURI": "resourceURI"
   },
   "stories": {
-    "available": 72,
+    "available": 253,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -3401,7 +3401,7 @@ Body (_Comic_)
         "type": "type"
       }
     ],
-    "returned": 72
+    "returned": 253
   },
   "textObjects": [
     {
@@ -3490,16 +3490,16 @@ Body (_ComicDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 72,
+  "code": 253,
   "copyright": "copyright",
   "data": {
-    "count": 72,
-    "limit": 72,
-    "offset": 72,
+    "count": 253,
+    "limit": 253,
+    "offset": 253,
     "results": [
       {
         "characters": {
-          "available": 72,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3508,7 +3508,7 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "collectedIssues": [
           {
@@ -3523,7 +3523,7 @@ Body (_ComicDataWrapper_)
           }
         ],
         "creators": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3532,20 +3532,20 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "dates": [
           {
-            "date": "2017-07-26T12:22:30.2059611Z",
+            "date": "2017-07-26T12:23:52.0957544Z",
             "type": "type"
           }
         ],
         "description": "description",
         "diamondCode": "diamondCode",
-        "digitalId": 236,
+        "digitalId": 253,
         "ean": "ean",
         "events": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3553,10 +3553,10 @@ Body (_ComicDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "format": "format",
-        "id": 236,
+        "id": 253,
         "images": [
           {
             "extension": "extension",
@@ -3565,12 +3565,12 @@ Body (_ComicDataWrapper_)
         ],
         "isbn": "isbn",
         "issn": "issn",
-        "issueNumber": 236,
-        "modified": "2017-07-26T12:22:30.2059611Z",
-        "pageCount": 236,
+        "issueNumber": 253,
+        "modified": "2017-07-26T12:23:52.0957544Z",
+        "pageCount": 253,
         "prices": [
           {
-            "price": 236.132629444419,
+            "price": 253.624542562116,
             "type": "type"
           }
         ],
@@ -3580,7 +3580,7 @@ Body (_ComicDataWrapper_)
           "resourceURI": "resourceURI"
         },
         "stories": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3589,7 +3589,7 @@ Body (_ComicDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "textObjects": [
           {
@@ -3619,7 +3619,7 @@ Body (_ComicDataWrapper_)
         ]
       }
     ],
-    "total": 236
+    "total": 253
   },
   "etag": "etag",
   "status": "status"
@@ -3680,16 +3680,16 @@ Body (_ComicDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 236,
+  "code": 253,
   "copyright": "copyright",
   "data": {
-    "count": 236,
-    "limit": 236,
-    "offset": 236,
+    "count": 253,
+    "limit": 253,
+    "offset": 253,
     "results": [
       {
         "characters": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3698,7 +3698,7 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "collectedIssues": [
           {
@@ -3713,7 +3713,7 @@ Body (_ComicDataWrapper_)
           }
         ],
         "creators": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3722,20 +3722,20 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "dates": [
           {
-            "date": "2017-07-26T12:22:30.2059611Z",
+            "date": "2017-07-26T12:23:52.0957544Z",
             "type": "type"
           }
         ],
         "description": "description",
         "diamondCode": "diamondCode",
-        "digitalId": 236,
+        "digitalId": 253,
         "ean": "ean",
         "events": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3743,10 +3743,10 @@ Body (_ComicDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "format": "format",
-        "id": 236,
+        "id": 253,
         "images": [
           {
             "extension": "extension",
@@ -3755,12 +3755,12 @@ Body (_ComicDataWrapper_)
         ],
         "isbn": "isbn",
         "issn": "issn",
-        "issueNumber": 236,
-        "modified": "2017-07-26T12:22:30.2059611Z",
-        "pageCount": 236,
+        "issueNumber": 253,
+        "modified": "2017-07-26T12:23:52.0957544Z",
+        "pageCount": 253,
         "prices": [
           {
-            "price": 236.132629444419,
+            "price": 253.624542562116,
             "type": "type"
           }
         ],
@@ -3770,7 +3770,7 @@ Body (_ComicDataWrapper_)
           "resourceURI": "resourceURI"
         },
         "stories": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3779,7 +3779,7 @@ Body (_ComicDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "textObjects": [
           {
@@ -3809,7 +3809,7 @@ Body (_ComicDataWrapper_)
         ]
       }
     ],
-    "total": 236
+    "total": 253
   },
   "etag": "etag",
   "status": "status"
@@ -3874,16 +3874,16 @@ Body (_ComicDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 236,
+  "code": 253,
   "copyright": "copyright",
   "data": {
-    "count": 236,
-    "limit": 236,
-    "offset": 236,
+    "count": 253,
+    "limit": 253,
+    "offset": 253,
     "results": [
       {
         "characters": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3892,7 +3892,7 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "collectedIssues": [
           {
@@ -3907,7 +3907,7 @@ Body (_ComicDataWrapper_)
           }
         ],
         "creators": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3916,20 +3916,20 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "dates": [
           {
-            "date": "2017-07-26T12:22:30.2059611Z",
+            "date": "2017-07-26T12:23:52.0957544Z",
             "type": "type"
           }
         ],
         "description": "description",
         "diamondCode": "diamondCode",
-        "digitalId": 236,
+        "digitalId": 253,
         "ean": "ean",
         "events": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3937,10 +3937,10 @@ Body (_ComicDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "format": "format",
-        "id": 236,
+        "id": 253,
         "images": [
           {
             "extension": "extension",
@@ -3949,12 +3949,12 @@ Body (_ComicDataWrapper_)
         ],
         "isbn": "isbn",
         "issn": "issn",
-        "issueNumber": 236,
-        "modified": "2017-07-26T12:22:30.2059611Z",
-        "pageCount": 236,
+        "issueNumber": 253,
+        "modified": "2017-07-26T12:23:52.0957544Z",
+        "pageCount": 253,
         "prices": [
           {
-            "price": 236.132629444419,
+            "price": 253.624542562116,
             "type": "type"
           }
         ],
@@ -3964,7 +3964,7 @@ Body (_ComicDataWrapper_)
           "resourceURI": "resourceURI"
         },
         "stories": {
-          "available": 236,
+          "available": 253,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -3973,7 +3973,7 @@ Body (_ComicDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 236
+          "returned": 253
         },
         "textObjects": [
           {
@@ -4003,7 +4003,7 @@ Body (_ComicDataWrapper_)
         ]
       }
     ],
-    "total": 236
+    "total": 253
   },
   "etag": "etag",
   "status": "status"
@@ -4069,16 +4069,16 @@ Body (_ComicDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 236,
+  "code": 40,
   "copyright": "copyright",
   "data": {
-    "count": 236,
-    "limit": 236,
-    "offset": 236,
+    "count": 40,
+    "limit": 40,
+    "offset": 40,
     "results": [
       {
         "characters": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4087,7 +4087,7 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "collectedIssues": [
           {
@@ -4102,7 +4102,7 @@ Body (_ComicDataWrapper_)
           }
         ],
         "creators": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4111,20 +4111,20 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "dates": [
           {
-            "date": "2017-07-26T12:22:30.2059611Z",
+            "date": "2017-07-26T12:23:52.1114008Z",
             "type": "type"
           }
         ],
         "description": "description",
         "diamondCode": "diamondCode",
-        "digitalId": 236,
+        "digitalId": 40,
         "ean": "ean",
         "events": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4132,10 +4132,10 @@ Body (_ComicDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "format": "format",
-        "id": 236,
+        "id": 40,
         "images": [
           {
             "extension": "extension",
@@ -4144,12 +4144,12 @@ Body (_ComicDataWrapper_)
         ],
         "isbn": "isbn",
         "issn": "issn",
-        "issueNumber": 236,
-        "modified": "2017-07-26T12:22:30.2059611Z",
-        "pageCount": 236,
+        "issueNumber": 40,
+        "modified": "2017-07-26T12:23:52.1114008Z",
+        "pageCount": 40,
         "prices": [
           {
-            "price": 236.132629444419,
+            "price": 40.3477157886828,
             "type": "type"
           }
         ],
@@ -4159,7 +4159,7 @@ Body (_ComicDataWrapper_)
           "resourceURI": "resourceURI"
         },
         "stories": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4168,7 +4168,7 @@ Body (_ComicDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "textObjects": [
           {
@@ -4198,7 +4198,7 @@ Body (_ComicDataWrapper_)
         ]
       }
     ],
-    "total": 236
+    "total": 40
   },
   "etag": "etag",
   "status": "status"
@@ -4263,16 +4263,16 @@ Body (_ComicDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 236,
+  "code": 40,
   "copyright": "copyright",
   "data": {
-    "count": 236,
-    "limit": 236,
-    "offset": 236,
+    "count": 40,
+    "limit": 40,
+    "offset": 40,
     "results": [
       {
         "characters": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4281,7 +4281,7 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "collectedIssues": [
           {
@@ -4296,7 +4296,7 @@ Body (_ComicDataWrapper_)
           }
         ],
         "creators": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4305,20 +4305,20 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "dates": [
           {
-            "date": "2017-07-26T12:22:30.2059611Z",
+            "date": "2017-07-26T12:23:52.1114008Z",
             "type": "type"
           }
         ],
         "description": "description",
         "diamondCode": "diamondCode",
-        "digitalId": 236,
+        "digitalId": 40,
         "ean": "ean",
         "events": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4326,10 +4326,10 @@ Body (_ComicDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "format": "format",
-        "id": 236,
+        "id": 40,
         "images": [
           {
             "extension": "extension",
@@ -4338,12 +4338,12 @@ Body (_ComicDataWrapper_)
         ],
         "isbn": "isbn",
         "issn": "issn",
-        "issueNumber": 236,
-        "modified": "2017-07-26T12:22:30.2059611Z",
-        "pageCount": 236,
+        "issueNumber": 40,
+        "modified": "2017-07-26T12:23:52.1114008Z",
+        "pageCount": 40,
         "prices": [
           {
-            "price": 236.132629444419,
+            "price": 40.3477157886828,
             "type": "type"
           }
         ],
@@ -4353,7 +4353,7 @@ Body (_ComicDataWrapper_)
           "resourceURI": "resourceURI"
         },
         "stories": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4362,7 +4362,7 @@ Body (_ComicDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "textObjects": [
           {
@@ -4392,7 +4392,7 @@ Body (_ComicDataWrapper_)
         ]
       }
     ],
-    "total": 236
+    "total": 40
   },
   "etag": "etag",
   "status": "status"
@@ -4457,16 +4457,16 @@ Body (_ComicDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 236,
+  "code": 40,
   "copyright": "copyright",
   "data": {
-    "count": 236,
-    "limit": 236,
-    "offset": 236,
+    "count": 40,
+    "limit": 40,
+    "offset": 40,
     "results": [
       {
         "characters": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4475,7 +4475,7 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "collectedIssues": [
           {
@@ -4490,7 +4490,7 @@ Body (_ComicDataWrapper_)
           }
         ],
         "creators": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4499,20 +4499,20 @@ Body (_ComicDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "dates": [
           {
-            "date": "2017-07-26T12:22:30.2059611Z",
+            "date": "2017-07-26T12:23:52.1114008Z",
             "type": "type"
           }
         ],
         "description": "description",
         "diamondCode": "diamondCode",
-        "digitalId": 236,
+        "digitalId": 40,
         "ean": "ean",
         "events": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4520,10 +4520,10 @@ Body (_ComicDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "format": "format",
-        "id": 236,
+        "id": 40,
         "images": [
           {
             "extension": "extension",
@@ -4532,12 +4532,12 @@ Body (_ComicDataWrapper_)
         ],
         "isbn": "isbn",
         "issn": "issn",
-        "issueNumber": 236,
-        "modified": "2017-07-26T12:22:30.2059611Z",
-        "pageCount": 236,
+        "issueNumber": 40,
+        "modified": "2017-07-26T12:23:52.1114008Z",
+        "pageCount": 40,
         "prices": [
           {
-            "price": 236.132629444419,
+            "price": 40.3477157886828,
             "type": "type"
           }
         ],
@@ -4547,7 +4547,7 @@ Body (_ComicDataWrapper_)
           "resourceURI": "resourceURI"
         },
         "stories": {
-          "available": 236,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4556,7 +4556,7 @@ Body (_ComicDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 236
+          "returned": 40
         },
         "textObjects": [
           {
@@ -4586,7 +4586,7 @@ Body (_ComicDataWrapper_)
         ]
       }
     ],
-    "total": 144
+    "total": 40
   },
   "etag": "etag",
   "status": "status"
@@ -4625,7 +4625,7 @@ Body (_Series_)
 ```
 {
   "characters": {
-    "available": 144,
+    "available": 40,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -4634,10 +4634,10 @@ Body (_Series_)
         "role": "role"
       }
     ],
-    "returned": 144
+    "returned": 40
   },
   "comics": {
-    "available": 144,
+    "available": 40,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -4645,10 +4645,10 @@ Body (_Series_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 144
+    "returned": 40
   },
   "creators": {
-    "available": 144,
+    "available": 40,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -4657,12 +4657,12 @@ Body (_Series_)
         "role": "role"
       }
     ],
-    "returned": 144
+    "returned": 40
   },
   "description": "description",
-  "endYear": 144,
+  "endYear": 40,
   "events": {
-    "available": 144,
+    "available": 40,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -4670,10 +4670,10 @@ Body (_Series_)
         "resourceURI": "resourceURI"
       }
     ],
-    "returned": 144
+    "returned": 40
   },
-  "id": 144,
-  "modified": "2017-07-26T12:22:30.2215852Z",
+  "id": 40,
+  "modified": "2017-07-26T12:23:52.1114008Z",
   "next": {
     "name": "name",
     "resourceURI": "resourceURI"
@@ -4684,9 +4684,9 @@ Body (_Series_)
   },
   "rating": "rating",
   "resourceURI": "resourceURI",
-  "startYear": 144,
+  "startYear": 40,
   "stories": {
-    "available": 144,
+    "available": 40,
     "collectionURI": "collectionURI",
     "items": [
       {
@@ -4695,7 +4695,7 @@ Body (_Series_)
         "type": "type"
       }
     ],
-    "returned": 144
+    "returned": 40
   },
   "thumbnail": {
     "extension": "extension",
@@ -4756,16 +4756,16 @@ Body (_SeriesDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 144,
+  "code": 40,
   "copyright": "copyright",
   "data": {
-    "count": 144,
-    "limit": 144,
-    "offset": 144,
+    "count": 40,
+    "limit": 40,
+    "offset": 40,
     "results": [
       {
         "characters": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4774,10 +4774,10 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
         "comics": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4785,10 +4785,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
         "creators": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4797,12 +4797,12 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
         "description": "description",
-        "endYear": 144,
+        "endYear": 40,
         "events": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4810,10 +4810,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
-        "id": 144,
-        "modified": "2017-07-26T12:22:30.2215852Z",
+        "id": 40,
+        "modified": "2017-07-26T12:23:52.1114008Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -4824,9 +4824,9 @@ Body (_SeriesDataWrapper_)
         },
         "rating": "rating",
         "resourceURI": "resourceURI",
-        "startYear": 144,
+        "startYear": 40,
         "stories": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4835,7 +4835,7 @@ Body (_SeriesDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
         "thumbnail": {
           "extension": "extension",
@@ -4850,7 +4850,7 @@ Body (_SeriesDataWrapper_)
         ]
       }
     ],
-    "total": 144
+    "total": 40
   },
   "etag": "etag",
   "status": "status"
@@ -4902,16 +4902,16 @@ Body (_SeriesDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 144,
+  "code": 40,
   "copyright": "copyright",
   "data": {
-    "count": 144,
-    "limit": 144,
-    "offset": 144,
+    "count": 40,
+    "limit": 40,
+    "offset": 40,
     "results": [
       {
         "characters": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4920,10 +4920,10 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
         "comics": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4931,10 +4931,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
         "creators": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4943,12 +4943,12 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
         "description": "description",
-        "endYear": 144,
+        "endYear": 40,
         "events": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4956,10 +4956,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
-        "id": 144,
-        "modified": "2017-07-26T12:22:30.2215852Z",
+        "id": 40,
+        "modified": "2017-07-26T12:23:52.1114008Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -4970,9 +4970,9 @@ Body (_SeriesDataWrapper_)
         },
         "rating": "rating",
         "resourceURI": "resourceURI",
-        "startYear": 144,
+        "startYear": 40,
         "stories": {
-          "available": 144,
+          "available": 40,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -4981,7 +4981,7 @@ Body (_SeriesDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 144
+          "returned": 40
         },
         "thumbnail": {
           "extension": "extension",
@@ -4996,7 +4996,7 @@ Body (_SeriesDataWrapper_)
         ]
       }
     ],
-    "total": 144
+    "total": 40
   },
   "etag": "etag",
   "status": "status"
@@ -5048,16 +5048,16 @@ Body (_SeriesDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 144,
+  "code": 203,
   "copyright": "copyright",
   "data": {
-    "count": 144,
-    "limit": 144,
-    "offset": 144,
+    "count": 203,
+    "limit": 203,
+    "offset": 203,
     "results": [
       {
         "characters": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5066,10 +5066,10 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "comics": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5077,10 +5077,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "creators": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5089,12 +5089,12 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "description": "description",
-        "endYear": 144,
+        "endYear": 203,
         "events": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5102,10 +5102,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
-        "id": 144,
-        "modified": "2017-07-26T12:22:30.2215852Z",
+        "id": 203,
+        "modified": "2017-07-26T12:23:52.1270059Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -5116,9 +5116,9 @@ Body (_SeriesDataWrapper_)
         },
         "rating": "rating",
         "resourceURI": "resourceURI",
-        "startYear": 144,
+        "startYear": 203,
         "stories": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5127,7 +5127,7 @@ Body (_SeriesDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "thumbnail": {
           "extension": "extension",
@@ -5142,7 +5142,7 @@ Body (_SeriesDataWrapper_)
         ]
       }
     ],
-    "total": 144
+    "total": 203
   },
   "etag": "etag",
   "status": "status"
@@ -5190,16 +5190,16 @@ Body (_SeriesDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 144,
+  "code": 203,
   "copyright": "copyright",
   "data": {
-    "count": 144,
-    "limit": 144,
-    "offset": 144,
+    "count": 203,
+    "limit": 203,
+    "offset": 203,
     "results": [
       {
         "characters": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5208,10 +5208,10 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "comics": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5219,10 +5219,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "creators": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5231,12 +5231,12 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "description": "description",
-        "endYear": 144,
+        "endYear": 203,
         "events": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5244,10 +5244,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
-        "id": 144,
-        "modified": "2017-07-26T12:22:30.2215852Z",
+        "id": 203,
+        "modified": "2017-07-26T12:23:52.1270059Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -5258,9 +5258,9 @@ Body (_SeriesDataWrapper_)
         },
         "rating": "rating",
         "resourceURI": "resourceURI",
-        "startYear": 144,
+        "startYear": 203,
         "stories": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5269,7 +5269,7 @@ Body (_SeriesDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "thumbnail": {
           "extension": "extension",
@@ -5284,7 +5284,7 @@ Body (_SeriesDataWrapper_)
         ]
       }
     ],
-    "total": 144
+    "total": 203
   },
   "etag": "etag",
   "status": "status"
@@ -5336,16 +5336,16 @@ Body (_SeriesDataWrapper_)
 {
   "attributionHTML": "attributionHTML",
   "attributionText": "attributionText",
-  "code": 144,
+  "code": 203,
   "copyright": "copyright",
   "data": {
-    "count": 144,
-    "limit": 144,
-    "offset": 144,
+    "count": 203,
+    "limit": 203,
+    "offset": 203,
     "results": [
       {
         "characters": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5354,10 +5354,10 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "comics": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5365,10 +5365,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "creators": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5377,12 +5377,12 @@ Body (_SeriesDataWrapper_)
               "role": "role"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "description": "description",
-        "endYear": 144,
+        "endYear": 203,
         "events": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5390,10 +5390,10 @@ Body (_SeriesDataWrapper_)
               "resourceURI": "resourceURI"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
-        "id": 144,
-        "modified": "2017-07-26T12:22:30.2215852Z",
+        "id": 203,
+        "modified": "2017-07-26T12:23:52.1270059Z",
         "next": {
           "name": "name",
           "resourceURI": "resourceURI"
@@ -5404,9 +5404,9 @@ Body (_SeriesDataWrapper_)
         },
         "rating": "rating",
         "resourceURI": "resourceURI",
-        "startYear": 144,
+        "startYear": 203,
         "stories": {
-          "available": 144,
+          "available": 203,
           "collectionURI": "collectionURI",
           "items": [
             {
@@ -5415,7 +5415,7 @@ Body (_SeriesDataWrapper_)
               "type": "type"
             }
           ],
-          "returned": 144
+          "returned": 203
         },
         "thumbnail": {
           "extension": "extension",
@@ -5430,7 +5430,7 @@ Body (_SeriesDataWrapper_)
         ]
       }
     ],
-    "total": 144
+    "total": 203
   },
   "etag": "etag",
   "status": "status"
