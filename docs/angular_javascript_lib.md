@@ -1,18 +1,6 @@
 # Getting started
 
-The Marvel Comics API is a tool to help developers everywhere create amazing, uncanny and incredible web sites and applications using data from the 70-plus years of the Marvel age of comics.
-
-**Ready to get started?** Great!
-
-Here's the short version of what you need to do:
-
-* **Sign up**: [Get an API key](https://developer.marvel.com/account)
-* **Be a good API citizen**: read, understand, and abide by the [terms of use](https://developer.marvel.com/terms) for the Marvel Comics API
-* **Link back**: observe the [attribution and linking guidelines](https://developer.marvel.com/documentation/attribution) when displaying data from the API
-* **Keep in touch**: [tell us about what you're building](https://developer.marvel.com/community) and talk to other developers on our community page
-* **Build cool stuff**
-
-Finally, remember that the Marvel API suite and portal are in beta and this is an evolving project. To the extent that it is possible, we will try to communicate changes to the API before they occur and will try to limit any modifications which cause backwards incompatible changes to applications.
+This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.
 
 ## How to Build
 
@@ -27,10 +15,10 @@ The following section describes how to use the generated SDK in an existing/new 
 Perform the following steps to configure angular and the SDK:
 + Make a `scripts` folder inside the root folder of the project. If you already have a `scripts` folder, skip to the next step.
 + Move the `angular.min.js` file inside the scripts folder. 
-+ Move the `MarvelComicsLib` folder inside the scripts folder.
++ Move the `SwaggerPetstoreLib` folder inside the scripts folder.
 + If any of the Custom Types in your API have `Date`/`Datetime` type fields or any endpoint has `Date`/`Datetime` response, you will need to download angular-moment and moment.js. Move these 2 files into the `scripts` folder as well.
 
-![folder-structure-image](https://apidocs.io/illustration/angularjs?step=folderStructure&workspaceFolder=MarvelComics-Angular&projectName=MarvelComicsLib)
+![folder-structure-image](https://apidocs.io/illustration/angularjs?step=folderStructure&workspaceFolder=Swagger%20Petstore-Angular&projectName=SwaggerPetstoreLib)
 
 ### 2. Open Project Folder
 Open an IDE/Text Editor for JavaScript like Sublime Text. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.  
@@ -38,7 +26,7 @@ Click on `File` and select `Open Folder`
 
 Select the folder of your SDK and click on `Select Folder` to open it up in Sublime Text. The folder will become visible in the bar on the left.
 
-![open-folder-image](https://apidocs.io/illustration/angularjs?step=openFolder&workspaceFolder=MarvelComics-Angular)
+![open-folder-image](https://apidocs.io/illustration/angularjs?step=openFolder&workspaceFolder=Swagger%20Petstore-Angular)
 
 ### 3. Create an Angular Application
 Since Angular JS is used for client-side web development, in order to use the generated library, you will have to develop an application first.
@@ -75,7 +63,7 @@ Skip to the next step if you are working with an existing project and already ha
 </html>
 ```
 
-![initial-html-code-image](https://apidocs.io/illustration/angularjs?step=initialCode&workspaceFolder=MarvelComics-Angular)
+![initial-html-code-image](https://apidocs.io/illustration/angularjs?step=initialCode&workspaceFolder=Swagger%20Petstore-Angular)
 
 ### 5. Including links to Angular in HTML file
 Your HTML file needs to have a link to `angular.min.js` file to use Angular-JS. Add the link using `script` tags inside the `head` section of `index.html` like:
@@ -95,66 +83,37 @@ Import the reference to the generated SDK files inside your html file like:
 <head>
     ...
     <!-- Helper files -->
-    <script src="scripts/MarvelComicsLib/Module.js"></script>
-    <script src="scripts/MarvelComicsLib/Configuration.js"></script>
-    <script src="scripts/MarvelComicsLib/ModelFactory.js"></script>
-    <script src="scripts/MarvelComicsLib/ObjectMapper.js"></script>
-    <script src="scripts/MarvelComicsLib/APIHelper.js"></script>
-    <script src="scripts/MarvelComicsLib/Http/Client/HttpContext.js"></script>
-    <script src="scripts/MarvelComicsLib/Http/Client/RequestClient.js"></script>
-    <script src="scripts/MarvelComicsLib/Http/Request/HttpRequest.js"></script>
-    <script src="scripts/MarvelComicsLib/Http/Response/HttpResponse.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Module.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Configuration.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/ModelFactory.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/ObjectMapper.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/APIHelper.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Http/Client/HttpContext.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Http/Client/RequestClient.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Http/Request/HttpRequest.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Http/Response/HttpResponse.js"></script>
 
     <!-- API Controllers -->
-    <script src="scripts/MarvelComicsLib/Controllers/BaseController.js"></script>
-    <script src="scripts/MarvelComicsLib/Controllers/EventsController.js"></script>
-    <script src="scripts/MarvelComicsLib/Controllers/CharactersController.js"></script>
-    <script src="scripts/MarvelComicsLib/Controllers/StoriesController.js"></script>
-    <script src="scripts/MarvelComicsLib/Controllers/CreatorsController.js"></script>
-    <script src="scripts/MarvelComicsLib/Controllers/ComicsController.js"></script>
-    <script src="scripts/MarvelComicsLib/Controllers/SeriesController.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Controllers/BaseController.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Controllers/PetController.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Controllers/StoreController.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Controllers/UserController.js"></script>
 
 
     <!-- Models -->
-    <script src="scripts/MarvelComicsLib/Models/BaseModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ThumbnailModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/FormatTypeEnum.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/DateDescriptorEnum.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CharacterSummaryModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/EventSummaryModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/TextObjectModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ComicPriceModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ComicDateModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ImageModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/StorySummaryModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CreatorSummaryModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/UrlModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ComicSummaryModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/EventListModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CreatorListModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CharacterListModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/SeriesListModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/SeriesSummaryModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/StoryListModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CharacterDataContainerModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CharacterModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ComicListModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/EventDataContainerModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/EventModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/EventDataWrapperModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ComicDataContainerModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ComicModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CreatorDataWrapperModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CreatorDataContainerModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CreatorModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/StoryDataWrapperModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/StoryDataContainerModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/StoryModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/CharacterDataWrapperModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/ComicDataWrapperModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/SeriesDataWrapperModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/SeriesDataContainerModel.js"></script>
-    <script src="scripts/MarvelComicsLib/Models/SeriesModel.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/BaseModel.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Order.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/StatusEnum.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Category.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/User.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Tag.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Pet.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Status6Enum.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/ApiResponse.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/OAuthScopeEnum.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/OAuthScopeEnum.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/OAuthToken.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/OAuthProviderErrorEnum.js"></script>
 
     ...
 </head>
@@ -195,7 +154,7 @@ In order to use the generated SDK's modules, controllers and factories, the proj
 Add the dependency like this:
 
 ```js
-var app = angular.module('myApp', ['MarvelComicsLib']);
+var app = angular.module('myApp', ['SwaggerPetstoreLib']);
 ```
 At this point, the SDK has been successfully included in your project. Further steps include using a service/factory from the generated SDK. To see working example of this, please head on [over here](#list-of-controllers) and choose any class to see its functions and example usage.  
 
@@ -209,7 +168,7 @@ To run the app, simply open up the `index.html` file in a browser.
 
 The Angular Application can be initialized as following:
 ```JavaScript
-var app = angular.module('myApp', [MarvelComicsLib]);
+var app = angular.module('myApp', [SwaggerPetstoreLib]);
 // now controllers/services can be created which import
 // the factories provided by the sdk
 ```
@@ -218,22 +177,177 @@ In order to setup authentication and initialization of the Angular App, you need
 
 | Parameter | Description |
 |-----------|-------------|
-| apikey | Developer's API key |
+| oAuthClientId | OAuth 2 Client ID |
+| oAuthRedirectUri | OAuth 2 Redirection endpoint or Callback Uri |
 
 
 
 ```JavaScript
-var app = angular.module('myApp', [MarvelComicsLib]);
+var app = angular.module('myApp', [SwaggerPetstoreLib]);
 app.factory('config', function($scope, Configuration) 
 {
     return {
         setConfigVars: function() {
             // Configuration parameters and credentials
-            Configuration.apikey = 'apikey'; // Developer's API key
+            Configuration.oAuthClientId = 'oAuthClientId'; // OAuth 2 Client ID
+            Configuration.oAuthRedirectUri = 'oAuthRedirectUri'; // OAuth 2 Redirection endpoint or Callback Uri
             
         }
     };
 });
+```
+
+
+You must now authorize the client.
+
+### Authorizing your client
+
+Your application must obtain user authorization before it can execute an endpoint call. The SDK uses OAuth 2.0 Implicit Grant to obtain a user's consent to perform an API request on user's behalf.
+The entire flow of building the authorization URL, obtaining consent from the user and storing the access token is handled by the SDK itself.
+
+
+`retrieveAndSetAccessToken()` method will be called in order to obtain and set the access token in the `Configuration`.  You must pass the **[scopes](#scopes)** (for which you need permission to access) in this function.  
+
+Calling this method will open up the consent screen.
+
+### Consent screen and access token retrieval
+Once the user responds to the consent request, the OAuth 2.0 server responds to your application's access request by redirecting the user to the redirect URI specified in Configuration.
+
+The redirect URI will receive the access token as the token argument in the URL fragment. This is how it will look
+
+```
+https://example.com/oauth/callback#token=XXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+The access token must be extracted by client-side JavaScript code.
+
+`OAuthCallbackScript.js` is the script which retrieves the access token and passes it as an event data to the window which actually opened up the consent screen. You can simply link this with a html file to handle access token retrieval.
+
+```html
+<script src="OAuthCallbackScript.js"></script>
+```
+
+
+
+
+### Scopes
+
+Scopes enable your application to only request access to the resources it needs while enabling users to control the amount of access they grant to your application. Available scopes are defined in the `SwaggerPetstoreLib/Models/OAuthScopeEnum` enumeration.
+
+| Scope Name | Description |
+| --- | --- |
+| `WRITEPETS` | modify pets in your account |
+| `READPETS` | read your pets |
+
+
+### Complete Example
+
+In order to set up the client side script which extracts the access token from the uri, perform the following steps:
++ Link the `OAuthCallbackScript.js` to the html file which is served at the registered redirect_uri for the application.
+
+For example, if the redirect_uri is `http://localhost/callback.html`, create `callback.html` in the root of the project folder. And add the following content:
+
+#### `callback.html`
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OAuthTest</title>
+
+</head>
+
+
+<body>
+    <script src="scripts/OAuthCallbackScript.js"></script>
+</body>
+
+</html>
+```
+
+This will ensure that the access token which will be received at `http://localhost/callback.html` will be retrieved by the `OAuthCallbackScript.js`.
+
+After setting up as above, here's how the Implicit Grant flow can be executed.
+
+#### `app.js`
+
+```JavaScript
+var app = angular.module('OAuthTest', ['SwaggerPetstoreLib']);
+
+app.controller('oauthClientController', function($scope, OAuthManager, OAuthScopeEnum) {
+    if (OAuthManager.isTokenRetrievedAndSet()) {
+        // token already set, make API calls
+    } else {
+        var scopes = [OAuthScopeEnum.WRITEPETS, OAuthScopeEnum.READPETS];
+        var promise = OAuthManager.retrieveAndSetAccessToken(scopes, '', true);
+        promise.then(function(success) {
+            // client successfully authorized
+            // make API calls as required
+        });
+    }
+});
+```
+
+#### `index.html`
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OAuthTest</title>
+    <meta charset="UTF8">
+
+    <script src="scripts/angular.min.js"></script>
+
+    <script src="scripts/SwaggerPetstoreLib/Module.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Configuration.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/ModelFactory.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/ObjectMapper.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/APIHelper.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Servers.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Environments.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Http/Client/HttpContext.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Http/Request/HttpRequest.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Http/Response/HttpResponse.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Http/Client/RequestClient.js"></script>
+
+    <!-- API Controllers -->
+    <script src="scripts/SwaggerPetstoreLib/Controllers/BaseController.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Controllers/PetController.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Controllers/StoreController.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Controllers/UserController.js"></script>
+
+
+    <!-- Models -->
+    <script src="scripts/SwaggerPetstoreLib/Models/BaseModel.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Order.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/StatusEnum.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Category.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/User.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Tag.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Pet.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/Status6Enum.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/ApiResponse.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/OAuthScopeEnum.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/OAuthScopeEnum.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/OAuthToken.js"></script>
+    <script src="scripts/SwaggerPetstoreLib/Models/OAuthProviderErrorEnum.js"></script>
+
+
+    <script src="scripts/SwaggerPetstoreLib/OAuthManager.js"></script>
+    <script src="scripts/app.js"></script>
+
+</head>
+
+
+<body ng-app="OAuthTest">
+    <div ng-controller="oauthClientController">
+
+    </div>
+</body>
+
+</html>
 ```
 
 
@@ -242,47 +356,34 @@ app.factory('config', function($scope, Configuration)
 
 ## <a name="list_of_controllers"></a>List of Controllers
 
-* [EventsController](#events_controller)
-* [CharactersController](#characters_controller)
-* [StoriesController](#stories_controller)
-* [CreatorsController](#creators_controller)
-* [ComicsController](#comics_controller)
-* [SeriesController](#series_controller)
+* [PetController](#pet_controller)
+* [StoreController](#store_controller)
+* [UserController](#user_controller)
 
-## <a name="events_controller"></a>![Class: ](https://apidocs.io/img/class.png ".EventsController") EventsController
+## <a name="pet_controller"></a>![Class: ](https://apidocs.io/img/class.png ".PetController") PetController
 
 ### Get singleton instance
 
-The singleton instance of the ``` EventsController ``` class can be accessed via Dependency Injection.
+The singleton instance of the ``` PetController ``` class can be accessed via Dependency Injection.
 
 ```js
-	app.controller("testController", function($scope, EventsController, EventDataWrapperModel, EventModel){
+	app.controller("testController", function($scope, PetController, Pet, ApiResponse){
 	});
 ```
 
-### <a name="get_events_collection_by_story_id"></a>![Method: ](https://apidocs.io/img/method.png ".EventsController.getEventsCollectionByStoryId") getEventsCollectionByStoryId
+### <a name="update_pet"></a>![Method: ](https://apidocs.io/img/method.png ".PetController.updatePet") updatePet
 
-> getEventsCollectionByStoryId
+> Update an existing pet
 
 
 ```javascript
-function getEventsCollectionByStoryId(storyId, characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series)
+function updatePet(body)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  | Pet object that needs to be added to the store |
 
 
 
@@ -291,21 +392,253 @@ function getEventsCollectionByStoryId(storyId, characters, comics, creators, lim
 ```javascript
 
 
-	app.controller("testController", function($scope, EventsController, EventDataWrapperModel){
-        var storyId = 'storyId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var creators = 'creators';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
+	app.controller("testController", function($scope, PetController){
+        var body = new Pet({"key":"value"});
+
+
+		var result = PetController.updatePet(body);
+        //Function call returns a promise
+        result.then(function(success){
+			//success case
+			//getting context of response
+			console.log(success.getContext());
+		},function(err){
+			//failure case
+		});
+
+	});
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Invalid ID supplied |
+| 404 | Pet not found |
+| 405 | Validation exception |
+
+
+
+
+### <a name="add_pet"></a>![Method: ](https://apidocs.io/img/method.png ".PetController.addPet") addPet
+
+> Add a new pet to the store
+
+
+```javascript
+function addPet(body)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| body |  ``` Required ```  | Pet object that needs to be added to the store |
+
+
+
+#### Example Usage
+
+```javascript
+
+
+	app.controller("testController", function($scope, PetController){
+        var body = new Pet({"key":"value"});
+
+
+		var result = PetController.addPet(body);
+        //Function call returns a promise
+        result.then(function(success){
+			//success case
+			//getting context of response
+			console.log(success.getContext());
+		},function(err){
+			//failure case
+		});
+
+	});
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 405 | Invalid input |
+
+
+
+
+### <a name="find_pets_by_status"></a>![Method: ](https://apidocs.io/img/method.png ".PetController.findPetsByStatus") findPetsByStatus
+
+> Finds Pets by status
+
+
+```javascript
+function findPetsByStatus(status)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| status |  ``` Required ```  ``` Collection ```  | Status values that need to be considered for filter |
+
+
+
+#### Example Usage
+
+```javascript
+
+
+	app.controller("testController", function($scope, PetController, Pet){
+        var status = [ Object.keys(Status6Enum)[0] ];
+
+
+		var result = PetController.findPetsByStatus(status);
+        //Function call returns a promise
+        result.then(function(success){
+			//success case
+			//getting context of response
+			console.log(success.getContext());
+		},function(err){
+			//failure case
+		});
+
+	});
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Invalid status value |
+
+
+
+
+### <a name="find_pets_by_tags"></a>![Method: ](https://apidocs.io/img/method.png ".PetController.findPetsByTags") findPetsByTags
+
+> Finds Pets by tags
+
+
+```javascript
+function findPetsByTags(tags)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| tags |  ``` Required ```  ``` Collection ```  | Tags to filter by |
+
+
+
+#### Example Usage
+
+```javascript
+
+
+	app.controller("testController", function($scope, PetController, Pet){
+        var tags = ['tags'];
+
+
+		var result = PetController.findPetsByTags(tags);
+        //Function call returns a promise
+        result.then(function(success){
+			//success case
+			//getting context of response
+			console.log(success.getContext());
+		},function(err){
+			//failure case
+		});
+
+	});
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Invalid tag value |
+
+
+
+
+### <a name="get_pet_by_id"></a>![Method: ](https://apidocs.io/img/method.png ".PetController.getPetById") getPetById
+
+> Find pet by ID
+
+
+```javascript
+function getPetById(petId)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| petId |  ``` Required ```  | ID of pet to return |
+
+
+
+#### Example Usage
+
+```javascript
+
+
+	app.controller("testController", function($scope, PetController, Pet){
+        var petId = 9;
+
+
+		var result = PetController.getPetById(petId);
+        //Function call returns a promise
+        result.then(function(success){
+			//success case
+			//getting context of response
+			console.log(success.getContext());
+		},function(err){
+			//failure case
+		});
+
+	});
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Invalid ID supplied |
+| 404 | Pet not found |
+
+
+
+
+### <a name="update_pet_with_form"></a>![Method: ](https://apidocs.io/img/method.png ".PetController.updatePetWithForm") updatePetWithForm
+
+> Updates a pet in the store with form data
+
+
+```javascript
+function updatePetWithForm(petId, name, status)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| petId |  ``` Required ```  | ID of pet that needs to be updated |
+| name |  ``` Optional ```  | Updated name of the pet |
+| status |  ``` Optional ```  | Updated status of the pet |
+
+
+
+#### Example Usage
+
+```javascript
+
+
+	app.controller("testController", function($scope, PetController){
+        var petId = 9;
         var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
+        var status = 'status';
 
 
-		var result = EventsController.getEventsCollectionByStoryId(storyId, characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series);
+		var result = PetController.updatePetWithForm(petId, name, status);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -322,34 +655,25 @@ function getEventsCollectionByStoryId(storyId, characters, comics, creators, lim
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 405 | Invalid input |
 
 
 
 
-### <a name="get_events_collection_by_series_id"></a>![Method: ](https://apidocs.io/img/method.png ".EventsController.getEventsCollectionBySeriesId") getEventsCollectionBySeriesId
+### <a name="delete_pet"></a>![Method: ](https://apidocs.io/img/method.png ".PetController.deletePet") deletePet
 
-> getEventsCollectionBySeriesId
+> Deletes a pet
 
 
 ```javascript
-function getEventsCollectionBySeriesId(seriesId, characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, stories)
+function deletePet(petId, apiKey)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series ID. |
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` Collection ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| stories |  ``` Optional ```  | Return only events which contain the specified stories (accepts a comma-separated list of ids). |
+| petId |  ``` Required ```  | Pet id to delete |
+| apiKey |  ``` Optional ```  | TODO: Add a parameter description |
 
 
 
@@ -358,21 +682,12 @@ function getEventsCollectionBySeriesId(seriesId, characters, comics, creators, l
 ```javascript
 
 
-	app.controller("testController", function($scope, EventsController, EventDataWrapperModel){
-        var seriesId = 'seriesId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var creators = 'creators';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = ['orderBy'];
-        var stories = 'stories';
+	app.controller("testController", function($scope, PetController){
+        var petId = 9;
+        var apiKey = api_key;
 
 
-		var result = EventsController.getEventsCollectionBySeriesId(seriesId, characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, stories);
+		var result = PetController.deletePet(petId, apiKey);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -389,34 +704,27 @@ function getEventsCollectionBySeriesId(seriesId, characters, comics, creators, l
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid ID supplied |
+| 404 | Pet not found |
 
 
 
 
-### <a name="get_creator_events_collection"></a>![Method: ](https://apidocs.io/img/method.png ".EventsController.getCreatorEventsCollection") getCreatorEventsCollection
+### <a name="upload_file"></a>![Method: ](https://apidocs.io/img/method.png ".PetController.uploadFile") uploadFile
 
-> getCreatorEventsCollection
+> uploads an image
 
 
 ```javascript
-function getCreatorEventsCollection(creatorId, characters, comics, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories)
+function uploadFile(petId, additionalMetadata, file)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| creatorId |  ``` Required ```  | The creator ID. |
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only events which contain the specified stories (accepts a comma-separated list of ids). |
+| petId |  ``` Required ```  | ID of pet to update |
+| additionalMetadata |  ``` Optional ```  | Additional data to pass to server |
+| file |  ``` Optional ```  | file to upload |
 
 
 
@@ -425,21 +733,63 @@ function getCreatorEventsCollection(creatorId, characters, comics, limit, modifi
 ```javascript
 
 
-	app.controller("testController", function($scope, EventsController, EventDataWrapperModel){
-        var creatorId = 'creatorId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
+	app.controller("testController", function($scope, PetController, $http, ApiResponse){
+        var petId = 9;
+        var additionalMetadata = 'additionalMetadata';
+        var file = "";
 
 
-		var result = EventsController.getCreatorEventsCollection(creatorId, characters, comics, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
+		$http.get(url).then(function(successData){
+            file = successData;
+            var result = PetController.uploadFile(petId, additionalMetadata, file);
+        //Function call returns a promise
+            result.then(function(success){
+    			//success case
+    			//getting context of response
+    			console.log(success.getContext());
+    		},function(err){
+    			//failure case
+    		});
+    
+    	}, function(errorData){
+    
+    	});
+	});
+```
+
+
+
+[Back to List of Controllers](#list_of_controllers)
+
+## <a name="store_controller"></a>![Class: ](https://apidocs.io/img/class.png ".StoreController") StoreController
+
+### Get singleton instance
+
+The singleton instance of the ``` StoreController ``` class can be accessed via Dependency Injection.
+
+```js
+	app.controller("testController", function($scope, StoreController, Order){
+	});
+```
+
+### <a name="get_inventory"></a>![Method: ](https://apidocs.io/img/method.png ".StoreController.getInventory") getInventory
+
+> Returns pet inventories by status
+
+
+```javascript
+function getInventory()
+```
+
+#### Example Usage
+
+```javascript
+
+
+	app.controller("testController", function($scope, StoreController){
+
+
+		var result = StoreController.getInventory();
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -452,38 +802,23 @@ function getCreatorEventsCollection(creatorId, characters, comics, limit, modifi
 	});
 ```
 
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
 
 
+### <a name="create_place_order"></a>![Method: ](https://apidocs.io/img/method.png ".StoreController.createPlaceOrder") createPlaceOrder
 
+> *Tags:*  ``` Skips Authentication ``` 
 
-### <a name="get_issue_events_collection"></a>![Method: ](https://apidocs.io/img/method.png ".EventsController.getIssueEventsCollection") getIssueEventsCollection
-
-> getIssueEventsCollection
+> Place an order for a pet
 
 
 ```javascript
-function getIssueEventsCollection(comicId, characters, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories)
+function createPlaceOrder(body)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| comicId |  ``` Required ```  | The comic ID. |
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only events which contain the specified stories (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  | order placed for purchasing the pet |
 
 
 
@@ -492,21 +827,11 @@ function getIssueEventsCollection(comicId, characters, creators, limit, modified
 ```javascript
 
 
-	app.controller("testController", function($scope, EventsController, EventDataWrapperModel){
-        var comicId = 'comicId';
-        var characters = 'characters';
-        var creators = 'creators';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
+	app.controller("testController", function($scope, StoreController, Order){
+        var body = new Order({"key":"value"});
 
 
-		var result = EventsController.getIssueEventsCollection(comicId, characters, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
+		var result = StoreController.createPlaceOrder(body);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -523,34 +848,26 @@ function getIssueEventsCollection(comicId, characters, creators, limit, modified
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid Order |
 
 
 
 
-### <a name="get_character_events_collection"></a>![Method: ](https://apidocs.io/img/method.png ".EventsController.getCharacterEventsCollection") getCharacterEventsCollection
+### <a name="get_order_by_id"></a>![Method: ](https://apidocs.io/img/method.png ".StoreController.getOrderById") getOrderById
 
-> getCharacterEventsCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Find purchase order by ID
 
 
 ```javascript
-function getCharacterEventsCollection(characterId, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories)
+function getOrderById(orderId)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| characterId |  ``` Required ```  | The character ID. |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only events which contain the specified stories (accepts a comma-separated list of ids). |
+| orderId |  ``` Required ```  | ID of pet that needs to be fetched |
 
 
 
@@ -559,21 +876,11 @@ function getCharacterEventsCollection(characterId, comics, creators, limit, modi
 ```javascript
 
 
-	app.controller("testController", function($scope, EventsController, EventDataWrapperModel){
-        var characterId = 'characterId';
-        var comics = 'comics';
-        var creators = 'creators';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
+	app.controller("testController", function($scope, StoreController, Order){
+        var orderId = 9;
 
 
-		var result = EventsController.getCharacterEventsCollection(characterId, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
+		var result = StoreController.getOrderById(orderId);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -590,24 +897,27 @@ function getCharacterEventsCollection(characterId, comics, creators, limit, modi
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid ID supplied |
+| 404 | Order not found |
 
 
 
 
-### <a name="get_event_individual"></a>![Method: ](https://apidocs.io/img/method.png ".EventsController.getEventIndividual") getEventIndividual
+### <a name="delete_order"></a>![Method: ](https://apidocs.io/img/method.png ".StoreController.deleteOrder") deleteOrder
 
-> getEventIndividual
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Delete purchase order by ID
 
 
 ```javascript
-function getEventIndividual(eventId)
+function deleteOrder(orderId)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| eventId |  ``` Required ```  | A single event. |
+| orderId |  ``` Required ```  | ID of the order that needs to be deleted |
 
 
 
@@ -616,11 +926,11 @@ function getEventIndividual(eventId)
 ```javascript
 
 
-	app.controller("testController", function($scope, EventsController, EventModel){
-        var eventId = 'eventId';
+	app.controller("testController", function($scope, StoreController){
+        var orderId = 9;
 
 
-		var result = EventsController.getEventIndividual(eventId);
+		var result = StoreController.deleteOrder(orderId);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -637,113 +947,40 @@ function getEventIndividual(eventId)
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 404 | Event not found. |
-
-
-
-
-### <a name="get_events_collection"></a>![Method: ](https://apidocs.io/img/method.png ".EventsController.getEventsCollection") getEventsCollection
-
-> getEventsCollection
-
-
-```javascript
-function getEventsCollection(characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only events which match the specified name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only events which take place in the specified stories (accepts a comma-separated list of ids). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, EventsController, EventDataWrapperModel){
-        var characters = 'characters';
-        var comics = 'comics';
-        var creators = 'creators';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
-
-
-		var result = EventsController.getEventsCollection(characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid ID supplied |
+| 404 | Order not found |
 
 
 
 
 [Back to List of Controllers](#list_of_controllers)
 
-## <a name="characters_controller"></a>![Class: ](https://apidocs.io/img/class.png ".CharactersController") CharactersController
+## <a name="user_controller"></a>![Class: ](https://apidocs.io/img/class.png ".UserController") UserController
 
 ### Get singleton instance
 
-The singleton instance of the ``` CharactersController ``` class can be accessed via Dependency Injection.
+The singleton instance of the ``` UserController ``` class can be accessed via Dependency Injection.
 
 ```js
-	app.controller("testController", function($scope, CharactersController, CharacterDataWrapperModel, CharacterModel){
+	app.controller("testController", function($scope, UserController, User){
 	});
 ```
 
-### <a name="get_character_collection_by_story_id"></a>![Method: ](https://apidocs.io/img/method.png ".CharactersController.getCharacterCollectionByStoryId") getCharacterCollectionByStoryId
+### <a name="create_user"></a>![Method: ](https://apidocs.io/img/method.png ".UserController.createUser") createUser
 
-> getCharacterCollectionByStoryId
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Create user
 
 
 ```javascript
-function getCharacterCollectionByStoryId(storyId, comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series)
+function createUser(body)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| comics |  ``` Optional ```  | Return only characters which appear in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only characters which appear comics that took place in the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| series |  ``` Optional ```  | Return only characters which appear the specified series (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  | Created user object |
 
 
 
@@ -752,20 +989,11 @@ function getCharacterCollectionByStoryId(storyId, comics, events, limit, modifie
 ```javascript
 
 
-	app.controller("testController", function($scope, CharactersController, CharacterDataWrapperModel){
-        var storyId = 'storyId';
-        var comics = 'comics';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
+	app.controller("testController", function($scope, UserController){
+        var body = new User({"key":"value"});
 
 
-		var result = CharactersController.getCharacterCollectionByStoryId(storyId, comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series);
+		var result = UserController.createUser(body);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -782,33 +1010,26 @@ function getCharacterCollectionByStoryId(storyId, comics, events, limit, modifie
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 0 | successful operation |
 
 
 
 
-### <a name="get_series_character_wrapper"></a>![Method: ](https://apidocs.io/img/method.png ".CharactersController.getSeriesCharacterWrapper") getSeriesCharacterWrapper
+### <a name="create_users_with_array_input"></a>![Method: ](https://apidocs.io/img/method.png ".UserController.createUsersWithArrayInput") createUsersWithArrayInput
 
-> getSeriesCharacterWrapper
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Creates list of users with given input array
 
 
 ```javascript
-function getSeriesCharacterWrapper(seriesId, comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, stories)
+function createUsersWithArrayInput(body)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series id. |
-| comics |  ``` Optional ```  | Return only characters which appear in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only characters which appear comics that took place in the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| stories |  ``` Optional ```  | Return only characters which appear the specified stories (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  ``` Collection ```  | List of user object |
 
 
 
@@ -817,20 +1038,13 @@ function getSeriesCharacterWrapper(seriesId, comics, events, limit, modifiedSinc
 ```javascript
 
 
-	app.controller("testController", function($scope, CharactersController, CharacterDataWrapperModel){
-        var seriesId = 'seriesId';
-        var comics = 'comics';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var stories = 'stories';
+	app.controller("testController", function($scope, UserController){
+        var body = [{"key":"value"}].map(function(elem) {
+        return new User(elem);
+    });
 
 
-		var result = CharactersController.getSeriesCharacterWrapper(seriesId, comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, stories);
+		var result = UserController.createUsersWithArrayInput(body);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -847,33 +1061,26 @@ function getSeriesCharacterWrapper(seriesId, comics, events, limit, modifiedSinc
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 0 | successful operation |
 
 
 
 
-### <a name="get_event_character_collection"></a>![Method: ](https://apidocs.io/img/method.png ".CharactersController.getEventCharacterCollection") getEventCharacterCollection
+### <a name="create_users_with_list_input"></a>![Method: ](https://apidocs.io/img/method.png ".UserController.createUsersWithListInput") createUsersWithListInput
 
-> getEventCharacterCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Creates list of users with given input array
 
 
 ```javascript
-function getEventCharacterCollection(eventId, comics, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories)
+function createUsersWithListInput(body)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| eventId |  ``` Required ```  | The event ID |
-| comics |  ``` Optional ```  | Return only characters which appear in the specified comics (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| series |  ``` Optional ```  | Return only characters which appear the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only characters which appear the specified stories (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  ``` Collection ```  | List of user object |
 
 
 
@@ -882,20 +1089,13 @@ function getEventCharacterCollection(eventId, comics, limit, modifiedSince, name
 ```javascript
 
 
-	app.controller("testController", function($scope, CharactersController, CharacterDataWrapperModel){
-        var eventId = 'eventId';
-        var comics = 'comics';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
+	app.controller("testController", function($scope, UserController){
+        var body = [{"key":"value"}].map(function(elem) {
+        return new User(elem);
+    });
 
 
-		var result = CharactersController.getEventCharacterCollection(eventId, comics, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
+		var result = UserController.createUsersWithListInput(body);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -912,33 +1112,27 @@ function getEventCharacterCollection(eventId, comics, limit, modifiedSince, name
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 0 | successful operation |
 
 
 
 
-### <a name="get_comic_character_collection"></a>![Method: ](https://apidocs.io/img/method.png ".CharactersController.getComicCharacterCollection") getComicCharacterCollection
+### <a name="get_login_user"></a>![Method: ](https://apidocs.io/img/method.png ".UserController.getLoginUser") getLoginUser
 
-> getComicCharacterCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Logs user into the system
 
 
 ```javascript
-function getComicCharacterCollection(comicId, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories)
+function getLoginUser(username, password)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| comicId |  ``` Required ```  | The comic id. |
-| events |  ``` Optional ```  | Return only characters which appear comics that took place in the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| series |  ``` Optional ```  | Return only characters which appear the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only characters which appear the specified stories (accepts a comma-separated list of ids). |
+| username |  ``` Required ```  | The user name for login |
+| password |  ``` Required ```  | The password for login in clear text |
 
 
 
@@ -947,20 +1141,12 @@ function getComicCharacterCollection(comicId, events, limit, modifiedSince, name
 ```javascript
 
 
-	app.controller("testController", function($scope, CharactersController, CharacterDataWrapperModel){
-        var comicId = 'comicId';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
+	app.controller("testController", function($scope, UserController){
+        var username = 'username';
+        var password = 'password';
 
 
-		var result = CharactersController.getComicCharacterCollection(comicId, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
+		var result = UserController.getLoginUser(username, password);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -977,37 +1163,31 @@ function getComicCharacterCollection(comicId, events, limit, modifiedSince, name
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid username/password supplied |
 
 
 
 
-### <a name="get_character_individual"></a>![Method: ](https://apidocs.io/img/method.png ".CharactersController.getCharacterIndividual") getCharacterIndividual
+### <a name="get_logout_user"></a>![Method: ](https://apidocs.io/img/method.png ".UserController.getLogoutUser") getLogoutUser
 
-> getCharacterIndividual
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Logs out current logged in user session
 
 
 ```javascript
-function getCharacterIndividual(characterId)
+function getLogoutUser()
 ```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characterId |  ``` Required ```  | A single character id. |
-
-
 
 #### Example Usage
 
 ```javascript
 
 
-	app.controller("testController", function($scope, CharactersController, CharacterModel){
-        var characterId = 'characterId';
+	app.controller("testController", function($scope, UserController){
 
 
-		var result = CharactersController.getCharacterIndividual(characterId);
+		var result = UserController.getLogoutUser();
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -1024,33 +1204,26 @@ function getCharacterIndividual(characterId)
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 404 | Character not found. |
+| 0 | successful operation |
 
 
 
 
-### <a name="get_character_collection"></a>![Method: ](https://apidocs.io/img/method.png ".CharactersController.getCharacterCollection") getCharacterCollection
+### <a name="get_user_by_name"></a>![Method: ](https://apidocs.io/img/method.png ".UserController.getUserByName") getUserByName
 
-> getCharacterCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Get user by user name
 
 
 ```javascript
-function getCharacterCollection(comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories)
+function getUserByName(username)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| comics |  ``` Optional ```  | Return only characters which appear in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only characters which appear in the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| series |  ``` Optional ```  | Return only characters which appear the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only characters which appear the specified stories (accepts a comma-separated list of ids). |
+| username |  ``` Required ```  | The name that needs to be fetched. Use user1 for testing. |
 
 
 
@@ -1059,20 +1232,11 @@ function getCharacterCollection(comics, events, limit, modifiedSince, name, name
 ```javascript
 
 
-	app.controller("testController", function($scope, CharactersController, CharacterDataWrapperModel){
-        var comics = 'comics';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var name = 'name';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
+	app.controller("testController", function($scope, UserController, User){
+        var username = 'username';
 
 
-		var result = CharactersController.getCharacterCollection(comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
+		var result = UserController.getUserByName(username);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -1089,45 +1253,28 @@ function getCharacterCollection(comics, events, limit, modifiedSince, name, name
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid username supplied |
+| 404 | User not found |
 
 
 
 
-[Back to List of Controllers](#list_of_controllers)
+### <a name="update_user"></a>![Method: ](https://apidocs.io/img/method.png ".UserController.updateUser") updateUser
 
-## <a name="stories_controller"></a>![Class: ](https://apidocs.io/img/class.png ".StoriesController") StoriesController
+> *Tags:*  ``` Skips Authentication ``` 
 
-### Get singleton instance
-
-The singleton instance of the ``` StoriesController ``` class can be accessed via Dependency Injection.
-
-```js
-	app.controller("testController", function($scope, StoriesController, StoryDataWrapperModel, StoryModel){
-	});
-```
-
-### <a name="get_story_collection"></a>![Method: ](https://apidocs.io/img/method.png ".StoriesController.getStoryCollection") getStoryCollection
-
-> getStoryCollection
+> Updated user
 
 
 ```javascript
-function getStoryCollection(characters, comics, creators, events, limit, modifiedSince, offset, orderBy, series)
+function updateUser(username, body)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only stories contained in the specified (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
+| username |  ``` Required ```  | name that need to be updated |
+| body |  ``` Required ```  | Updated user object |
 
 
 
@@ -1136,19 +1283,12 @@ function getStoryCollection(characters, comics, creators, events, limit, modifie
 ```javascript
 
 
-	app.controller("testController", function($scope, StoriesController, StoryDataWrapperModel){
-        var characters = 'characters';
-        var comics = 'comics';
-        var creators = 'creators';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
+	app.controller("testController", function($scope, UserController){
+        var username = 'username';
+        var body = new User({"key":"value"});
 
 
-		var result = StoriesController.getStoryCollection(characters, comics, creators, events, limit, modifiedSince, offset, orderBy, series);
+		var result = UserController.updateUser(username, body);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -1165,32 +1305,27 @@ function getStoryCollection(characters, comics, creators, events, limit, modifie
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid user supplied |
+| 404 | User not found |
 
 
 
 
-### <a name="get_series_story_collection"></a>![Method: ](https://apidocs.io/img/method.png ".StoriesController.getSeriesStoryCollection") getSeriesStoryCollection
+### <a name="delete_user"></a>![Method: ](https://apidocs.io/img/method.png ".UserController.deleteUser") deleteUser
 
-> getSeriesStoryCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Delete user
 
 
 ```javascript
-function getSeriesStoryCollection(seriesId, characters, comics, creators, events, limit, modifiedSince, offset, orderBy)
+function deleteUser(username)
 ```
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series ID. |
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only stories contained in the specified (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
+| username |  ``` Required ```  | The name that needs to be deleted |
 
 
 
@@ -1199,19 +1334,11 @@ function getSeriesStoryCollection(seriesId, characters, comics, creators, events
 ```javascript
 
 
-	app.controller("testController", function($scope, StoriesController, StoryDataWrapperModel){
-        var seriesId = 'seriesId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var creators = 'creators';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
+	app.controller("testController", function($scope, UserController){
+        var username = 'username';
 
 
-		var result = StoriesController.getSeriesStoryCollection(seriesId, characters, comics, creators, events, limit, modifiedSince, offset, orderBy);
+		var result = UserController.deleteUser(username);
         //Function call returns a promise
         result.then(function(success){
 			//success case
@@ -1228,1832 +1355,8 @@ function getSeriesStoryCollection(seriesId, characters, comics, creators, events
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_event_story_collection"></a>![Method: ](https://apidocs.io/img/method.png ".StoriesController.getEventStoryCollection") getEventStoryCollection
-
-> getEventStoryCollection
-
-
-```javascript
-function getEventStoryCollection(eventId, characters, comics, creators, limit, modifiedSince, offset, orderBy, series)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| eventId |  ``` Required ```  | The ID of the event. |
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only stories contained in the specified (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, StoriesController, StoryDataWrapperModel){
-        var eventId = 'eventId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var creators = 'creators';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-
-
-		var result = StoriesController.getEventStoryCollection(eventId, characters, comics, creators, limit, modifiedSince, offset, orderBy, series);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_creator_story_collection"></a>![Method: ](https://apidocs.io/img/method.png ".StoriesController.getCreatorStoryCollection") getCreatorStoryCollection
-
-> getCreatorStoryCollection
-
-
-```javascript
-function getCreatorStoryCollection(creatorId, characters, comics, events, limit, modifiedSince, offset, orderBy, series)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| creatorId |  ``` Required ```  | The ID of the creator. |
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only stories contained in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, StoriesController, StoryDataWrapperModel){
-        var creatorId = 'creatorId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-
-
-		var result = StoriesController.getCreatorStoryCollection(creatorId, characters, comics, events, limit, modifiedSince, offset, orderBy, series);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_comic_story_collection_by_comic_id"></a>![Method: ](https://apidocs.io/img/method.png ".StoriesController.getComicStoryCollectionByComicId") getComicStoryCollectionByComicId
-
-> getComicStoryCollectionByComicId
-
-
-```javascript
-function getComicStoryCollectionByComicId(comicId, characters, creators, events, limit, modifiedSince, offset, orderBy, series)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comicId |  ``` Required ```  | The comic ID. |
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, StoriesController, StoryDataWrapperModel){
-        var comicId = 'comicId';
-        var characters = 'characters';
-        var creators = 'creators';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-
-
-		var result = StoriesController.getComicStoryCollectionByComicId(comicId, characters, creators, events, limit, modifiedSince, offset, orderBy, series);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_character_story_collection"></a>![Method: ](https://apidocs.io/img/method.png ".StoriesController.getCharacterStoryCollection") getCharacterStoryCollection
-
-> getCharacterStoryCollection
-
-
-```javascript
-function getCharacterStoryCollection(characterId, comics, creators, events, limit, modifiedSince, offset, orderBy, series)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characterId |  ``` Required ```  | The character ID. |
-| comics |  ``` Optional ```  | Return only stories contained in the specified (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, StoriesController, StoryDataWrapperModel){
-        var characterId = 'characterId';
-        var comics = 'comics';
-        var creators = 'creators';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-
-
-		var result = StoriesController.getCharacterStoryCollection(characterId, comics, creators, events, limit, modifiedSince, offset, orderBy, series);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_story_individual"></a>![Method: ](https://apidocs.io/img/method.png ".StoriesController.getStoryIndividual") getStoryIndividual
-
-> getStoryIndividual
-
-
-```javascript
-function getStoryIndividual(storyId)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| storyId |  ``` Required ```  | Filter by story id. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, StoriesController, StoryModel){
-        var storyId = 'storyId';
-
-
-		var result = StoriesController.getStoryIndividual(storyId);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | Story not found. |
-
-
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="creators_controller"></a>![Class: ](https://apidocs.io/img/class.png ".CreatorsController") CreatorsController
-
-### Get singleton instance
-
-The singleton instance of the ``` CreatorsController ``` class can be accessed via Dependency Injection.
-
-```js
-	app.controller("testController", function($scope, CreatorsController, CreatorModel, CreatorDataWrapperModel){
-	});
-```
-
-### <a name="get_creator_individual"></a>![Method: ](https://apidocs.io/img/method.png ".CreatorsController.getCreatorIndividual") getCreatorIndividual
-
-> getCreatorIndividual
-
-
-```javascript
-function getCreatorIndividual(creatorId)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| creatorId |  ``` Required ```  | A single creator id. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, CreatorsController, CreatorModel){
-        var creatorId = 'creatorId';
-
-
-		var result = CreatorsController.getCreatorIndividual(creatorId);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | Creator not found. |
-
-
-
-
-### <a name="get_creator_collection_by_comic_id"></a>![Method: ](https://apidocs.io/img/method.png ".CreatorsController.getCreatorCollectionByComicId") getCreatorCollectionByComicId
-
-> getCreatorCollectionByComicId
-
-
-```javascript
-function getCreatorCollectionByComicId(comicId, comics, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comicId |  ``` Required ```  | The comic id. |
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| series |  ``` Optional ```  | Return only creators who worked on the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only creators who worked on the specified stories (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, CreatorsController, CreatorDataWrapperModel){
-        var comicId = 'comicId';
-        var comics = 'comics';
-        var firstName = 'firstName';
-        var firstNameStartsWith = 'firstNameStartsWith';
-        var lastName = 'lastName';
-        var lastNameStartsWith = 'lastNameStartsWith';
-        var limit = 'limit';
-        var middleName = 'middleName';
-        var middleNameStartsWith = 'middleNameStartsWith';
-        var modifiedSince = 'modifiedSince';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
-        var suffix = 'suffix';
-
-
-		var result = CreatorsController.getCreatorCollectionByComicId(comicId, comics, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_creator_collection"></a>![Method: ](https://apidocs.io/img/method.png ".CreatorsController.getCreatorCollection") getCreatorCollection
-
-> getCreatorCollection
-
-
-```javascript
-function getCreatorCollection(comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only creators who worked on comics that took place in the specified events (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. Brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| series |  ``` Optional ```  | Return only creators who worked on the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only creators who worked on the specified stories (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, CreatorsController, CreatorDataWrapperModel){
-        var comics = 'comics';
-        var events = 'events';
-        var firstName = 'firstName';
-        var firstNameStartsWith = 'firstNameStartsWith';
-        var lastName = 'lastName';
-        var lastNameStartsWith = 'lastNameStartsWith';
-        var limit = 'limit';
-        var middleName = 'middleName';
-        var middleNameStartsWith = 'middleNameStartsWith';
-        var modifiedSince = 'modifiedSince';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
-        var suffix = 'suffix';
-
-
-		var result = CreatorsController.getCreatorCollection(comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_creator_collection_by_event_id"></a>![Method: ](https://apidocs.io/img/method.png ".CreatorsController.getCreatorCollectionByEventId") getCreatorCollectionByEventId
-
-> getCreatorCollectionByEventId
-
-
-```javascript
-function getCreatorCollectionByEventId(eventId, comics, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| eventId |  ``` Required ```  | The event ID. |
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| series |  ``` Optional ```  | Return only creators who worked on the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only creators who worked on the specified stories (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, CreatorsController, CreatorDataWrapperModel){
-        var eventId = 'eventId';
-        var comics = 'comics';
-        var firstName = 'firstName';
-        var firstNameStartsWith = 'firstNameStartsWith';
-        var lastName = 'lastName';
-        var lastNameStartsWith = 'lastNameStartsWith';
-        var limit = 'limit';
-        var middleName = 'middleName';
-        var middleNameStartsWith = 'middleNameStartsWith';
-        var modifiedSince = 'modifiedSince';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var stories = 'stories';
-        var suffix = 'suffix';
-
-
-		var result = CreatorsController.getCreatorCollectionByEventId(eventId, comics, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_creator_collection_by_series_id"></a>![Method: ](https://apidocs.io/img/method.png ".CreatorsController.getCreatorCollectionBySeriesId") getCreatorCollectionBySeriesId
-
-> getCreatorCollectionBySeriesId
-
-
-```javascript
-function getCreatorCollectionBySeriesId(seriesId, comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, stories, suffix)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series ID. |
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only creators who worked on comics that took place in the specified events (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| stories |  ``` Optional ```  | Return only creators who worked on the specified stories (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, CreatorsController, CreatorDataWrapperModel){
-        var seriesId = 'seriesId';
-        var comics = 'comics';
-        var events = 'events';
-        var firstName = 'firstName';
-        var firstNameStartsWith = 'firstNameStartsWith';
-        var lastName = 'lastName';
-        var lastNameStartsWith = 'lastNameStartsWith';
-        var limit = 'limit';
-        var middleName = 'middleName';
-        var middleNameStartsWith = 'middleNameStartsWith';
-        var modifiedSince = 'modifiedSince';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var stories = 'stories';
-        var suffix = 'suffix';
-
-
-		var result = CreatorsController.getCreatorCollectionBySeriesId(seriesId, comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, stories, suffix);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_creator_collection_by_story_id"></a>![Method: ](https://apidocs.io/img/method.png ".CreatorsController.getCreatorCollectionByStoryId") getCreatorCollectionByStoryId
-
-> getCreatorCollectionByStoryId
-
-
-```javascript
-function getCreatorCollectionByStoryId(storyId, comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, suffix)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only creators who worked on comics that took place in the specified events (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| series |  ``` Optional ```  | Return only creators who worked on the specified series (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, CreatorsController, CreatorDataWrapperModel){
-        var storyId = 'storyId';
-        var comics = 'comics';
-        var events = 'events';
-        var firstName = 'firstName';
-        var firstNameStartsWith = 'firstNameStartsWith';
-        var lastName = 'lastName';
-        var lastNameStartsWith = 'lastNameStartsWith';
-        var limit = 'limit';
-        var middleName = 'middleName';
-        var middleNameStartsWith = 'middleNameStartsWith';
-        var modifiedSince = 'modifiedSince';
-        var nameStartsWith = 'nameStartsWith';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var suffix = 'suffix';
-
-
-		var result = CreatorsController.getCreatorCollectionByStoryId(storyId, comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, suffix);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="comics_controller"></a>![Class: ](https://apidocs.io/img/class.png ".ComicsController") ComicsController
-
-### Get singleton instance
-
-The singleton instance of the ``` ComicsController ``` class can be accessed via Dependency Injection.
-
-```js
-	app.controller("testController", function($scope, ComicsController, ComicModel, ComicDataWrapperModel){
-	});
-```
-
-### <a name="get_comic_individual"></a>![Method: ](https://apidocs.io/img/method.png ".ComicsController.getComicIndividual") getComicIndividual
-
-> getComicIndividual
-
-
-```javascript
-function getComicIndividual(comicId)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comicId |  ``` Required ```  | A single comic. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, ComicsController, ComicModel){
-        var comicId = 'comicId';
-
-
-		var result = ComicsController.getComicIndividual(comicId);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | Comic not found. |
-
-
-
-
-### <a name="get_comics_character_collection"></a>![Method: ](https://apidocs.io/img/method.png ".ComicsController.getComicsCharacterCollection") getComicsCharacterCollection
-
-> getComicsCharacterCollection
-
-
-```javascript
-function getComicsCharacterCollection(characterId, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characterId |  ``` Required ```  | The character id. |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, ComicsController, ComicDataWrapperModel){
-        var characterId = 'characterId';
-        var collaborators = 'collaborators';
-        var creators = 'creators';
-        var dateDescriptor = Object.keys(DateDescriptorEnum)[0];
-        var dateRange = 'dateRange';
-        var diamondCode = 'diamondCode';
-        var digitalId = 'digitalId';
-        var ean = 'ean';
-        var events = 'events';
-        var format = 'format';
-        var formatType = Object.keys(FormatTypeEnum)[0];
-        var hasDigitalIssue = 'hasDigitalIssue';
-        var isbn = 'isbn';
-        var issn = 'issn';
-        var issueNumber = 'issueNumber';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var noVariants = 'noVariants';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var sharedAppearances = 'sharedAppearances';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-        var upc = 'upc';
-
-
-		var result = ComicsController.getComicsCharacterCollection(characterId, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_comics_collection"></a>![Method: ](https://apidocs.io/img/method.png ".ComicsController.getComicsCollection") getComicsCollection
-
-> getComicsCollection
-
-
-```javascript
-function getComicsCollection(characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). Accepts a comma-separated list of ids. |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variants (alternate covers, secondary printings, director's cuts, etc.) from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). Accepts a comma-separated list of ids. |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, ComicsController, ComicDataWrapperModel){
-        var characters = 'characters';
-        var collaborators = 'collaborators';
-        var creators = 'creators';
-        var dateDescriptor = Object.keys(DateDescriptorEnum)[0];
-        var dateRange = 'dateRange';
-        var diamondCode = 'diamondCode';
-        var digitalId = 'digitalId';
-        var ean = 'ean';
-        var events = 'events';
-        var format = 'format';
-        var formatType = Object.keys(FormatTypeEnum)[0];
-        var hasDigitalIssue = 'hasDigitalIssue';
-        var isbn = 'isbn';
-        var issn = 'issn';
-        var issueNumber = 'issueNumber';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var noVariants = 'noVariants';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var sharedAppearances = 'sharedAppearances';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-        var upc = 'upc';
-
-
-		var result = ComicsController.getComicsCollection(characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_comics_collection_by_creator_id"></a>![Method: ](https://apidocs.io/img/method.png ".ComicsController.getComicsCollectionByCreatorId") getComicsCollectionByCreatorId
-
-> getComicsCollectionByCreatorId
-
-
-```javascript
-function getComicsCollectionByCreatorId(creatorId, characters, collaborators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| creatorId |  ``` Required ```  | The creator ID. |
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, ComicsController, ComicDataWrapperModel){
-        var creatorId = 'creatorId';
-        var characters = 'characters';
-        var collaborators = 'collaborators';
-        var dateDescriptor = Object.keys(DateDescriptorEnum)[0];
-        var dateRange = 'dateRange';
-        var diamondCode = 'diamondCode';
-        var digitalId = 'digitalId';
-        var ean = 'ean';
-        var events = 'events';
-        var format = 'format';
-        var formatType = Object.keys(FormatTypeEnum)[0];
-        var hasDigitalIssue = 'hasDigitalIssue';
-        var isbn = 'isbn';
-        var issn = 'issn';
-        var issueNumber = 'issueNumber';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var noVariants = 'noVariants';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var sharedAppearances = 'sharedAppearances';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-        var upc = 'upc';
-
-
-		var result = ComicsController.getComicsCollectionByCreatorId(creatorId, characters, collaborators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_comics_collection_by_event_id"></a>![Method: ](https://apidocs.io/img/method.png ".ComicsController.getComicsCollectionByEventId") getComicsCollectionByEventId
-
-> getComicsCollectionByEventId
-
-
-```javascript
-function getComicsCollectionByEventId(eventId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| eventId |  ``` Required ```  | The event id. |
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, ComicsController, ComicDataWrapperModel){
-        var eventId = 'eventId';
-        var characters = 'characters';
-        var collaborators = 'collaborators';
-        var creators = 'creators';
-        var dateDescriptor = Object.keys(DateDescriptorEnum)[0];
-        var dateRange = 'dateRange';
-        var diamondCode = 'diamondCode';
-        var digitalId = 'digitalId';
-        var ean = 'ean';
-        var events = 'events';
-        var format = 'format';
-        var formatType = Object.keys(FormatTypeEnum)[0];
-        var hasDigitalIssue = 'hasDigitalIssue';
-        var isbn = 'isbn';
-        var issn = 'issn';
-        var issueNumber = 'issueNumber';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var noVariants = 'noVariants';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var sharedAppearances = 'sharedAppearances';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-        var upc = 'upc';
-
-
-		var result = ComicsController.getComicsCollectionByEventId(eventId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_comics_collection_by_series_id"></a>![Method: ](https://apidocs.io/img/method.png ".ComicsController.getComicsCollectionBySeriesId") getComicsCollectionBySeriesId
-
-> getComicsCollectionBySeriesId
-
-
-```javascript
-function getComicsCollectionBySeriesId(seriesId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, sharedAppearances, startYear, stories, title, titleStartsWith, upc)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series ID. |
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, ComicsController, ComicDataWrapperModel){
-        var seriesId = 'seriesId';
-        var characters = 'characters';
-        var collaborators = 'collaborators';
-        var creators = 'creators';
-        var dateDescriptor = Object.keys(DateDescriptorEnum)[0];
-        var dateRange = 'dateRange';
-        var diamondCode = 'diamondCode';
-        var digitalId = 'digitalId';
-        var ean = 'ean';
-        var events = 'events';
-        var format = 'format';
-        var formatType = Object.keys(FormatTypeEnum)[0];
-        var hasDigitalIssue = 'hasDigitalIssue';
-        var isbn = 'isbn';
-        var issn = 'issn';
-        var issueNumber = 'issueNumber';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var noVariants = 'noVariants';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var sharedAppearances = 'sharedAppearances';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-        var upc = 'upc';
-
-
-		var result = ComicsController.getComicsCollectionBySeriesId(seriesId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_comics_collection_by_story_id"></a>![Method: ](https://apidocs.io/img/method.png ".ComicsController.getComicsCollectionByStoryId") getComicsCollectionByStoryId
-
-> getComicsCollectionByStoryId
-
-
-```javascript
-function getComicsCollectionByStoryId(storyId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, title, titleStartsWith, upc)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, ComicsController, ComicDataWrapperModel){
-        var storyId = 'storyId';
-        var characters = 'characters';
-        var collaborators = 'collaborators';
-        var creators = 'creators';
-        var dateDescriptor = Object.keys(DateDescriptorEnum)[0];
-        var dateRange = 'dateRange';
-        var diamondCode = 'diamondCode';
-        var digitalId = 'digitalId';
-        var ean = 'ean';
-        var events = 'events';
-        var format = 'format';
-        var formatType = Object.keys(FormatTypeEnum)[0];
-        var hasDigitalIssue = 'hasDigitalIssue';
-        var isbn = 'isbn';
-        var issn = 'issn';
-        var issueNumber = 'issueNumber';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var noVariants = 'noVariants';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var series = 'series';
-        var sharedAppearances = 'sharedAppearances';
-        var startYear = 'startYear';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-        var upc = 'upc';
-
-
-		var result = ComicsController.getComicsCollectionByStoryId(storyId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, title, titleStartsWith, upc);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="series_controller"></a>![Class: ](https://apidocs.io/img/class.png ".SeriesController") SeriesController
-
-### Get singleton instance
-
-The singleton instance of the ``` SeriesController ``` class can be accessed via Dependency Injection.
-
-```js
-	app.controller("testController", function($scope, SeriesController, SeriesModel, SeriesDataWrapperModel){
-	});
-```
-
-### <a name="get_series_individual"></a>![Method: ](https://apidocs.io/img/method.png ".SeriesController.getSeriesIndividual") getSeriesIndividual
-
-> getSeriesIndividual
-
-
-```javascript
-function getSeriesIndividual(seriesId)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| seriesId |  ``` Required ```  | Filter by series title. |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, SeriesController, SeriesModel){
-        var seriesId = 'seriesId';
-
-
-		var result = SeriesController.getSeriesIndividual(seriesId);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | Series not found. |
-
-
-
-
-### <a name="get_character_series_collection"></a>![Method: ](https://apidocs.io/img/method.png ".SeriesController.getCharacterSeriesCollection") getCharacterSeriesCollection
-
-> getCharacterSeriesCollection
-
-
-```javascript
-function getCharacterSeriesCollection(characterId, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characterId |  ``` Required ```  | The character ID |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| creators |  ``` Optional ```  | Return only series which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only series which have comics that take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| stories |  ``` Optional ```  | Return only series which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Filter by series title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, SeriesController, SeriesDataWrapperModel){
-        var characterId = 'characterId';
-        var comics = 'comics';
-        var contains = 'contains';
-        var creators = 'creators';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var seriesType = 'seriesType';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-
-
-		var result = SeriesController.getCharacterSeriesCollection(characterId, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_creator_series_collection"></a>![Method: ](https://apidocs.io/img/method.png ".SeriesController.getCreatorSeriesCollection") getCreatorSeriesCollection
-
-> getCreatorSeriesCollection
-
-
-```javascript
-function getCreatorSeriesCollection(creatorId, characters, comics, contains, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| creatorId |  ``` Required ```  | The creator ID. |
-| characters |  ``` Optional ```  | Return only series which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| events |  ``` Optional ```  | Return only series which have comics that take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| stories |  ``` Optional ```  | Return only series which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Filter by series title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, SeriesController, SeriesDataWrapperModel){
-        var creatorId = 'creatorId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var contains = 'contains';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var seriesType = 'seriesType';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-
-
-		var result = SeriesController.getCreatorSeriesCollection(creatorId, characters, comics, contains, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_event_series_collection"></a>![Method: ](https://apidocs.io/img/method.png ".SeriesController.getEventSeriesCollection") getEventSeriesCollection
-
-> getEventSeriesCollection
-
-
-```javascript
-function getEventSeriesCollection(eventId, characters, comics, contains, creators, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| eventId |  ``` Required ```  | The event ID. |
-| characters |  ``` Optional ```  | Return only series which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| creators |  ``` Optional ```  | Return only series which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| stories |  ``` Optional ```  | Return only series which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Filter by series title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, SeriesController, SeriesDataWrapperModel){
-        var eventId = 'eventId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var contains = 'contains';
-        var creators = 'creators';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var seriesType = 'seriesType';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-
-
-		var result = SeriesController.getEventSeriesCollection(eventId, characters, comics, contains, creators, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_series_collection"></a>![Method: ](https://apidocs.io/img/method.png ".SeriesController.getSeriesCollection") getSeriesCollection
-
-> getSeriesCollection
-
-
-```javascript
-function getSeriesCollection(characters, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characters |  ``` Optional ```  | Return only series which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| creators |  ``` Optional ```  | Return only series which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only series which have comics that take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| stories |  ``` Optional ```  | Return only series which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only series matching the specified title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, SeriesController, SeriesDataWrapperModel){
-        var characters = 'characters';
-        var comics = 'comics';
-        var contains = 'contains';
-        var creators = 'creators';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var seriesType = 'seriesType';
-        var startYear = 'startYear';
-        var stories = 'stories';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-
-
-		var result = SeriesController.getSeriesCollection(characters, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-
-
-### <a name="get_story_series_collection"></a>![Method: ](https://apidocs.io/img/method.png ".SeriesController.getStorySeriesCollection") getStorySeriesCollection
-
-> getStorySeriesCollection
-
-
-```javascript
-function getStorySeriesCollection(storyId, characters, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, title, titleStartsWith)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| characters |  ``` Optional ```  | Return only series which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| creators |  ``` Optional ```  | Return only series which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only series which have comics that take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| title |  ``` Optional ```  | Filter by series title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-
-#### Example Usage
-
-```javascript
-
-
-	app.controller("testController", function($scope, SeriesController, SeriesDataWrapperModel){
-        var storyId = 'storyId';
-        var characters = 'characters';
-        var comics = 'comics';
-        var contains = 'contains';
-        var creators = 'creators';
-        var events = 'events';
-        var limit = 'limit';
-        var modifiedSince = 'modifiedSince';
-        var offset = 'offset';
-        var orderBy = 'orderBy';
-        var seriesType = 'seriesType';
-        var startYear = 'startYear';
-        var title = 'title';
-        var titleStartsWith = 'titleStartsWith';
-
-
-		var result = SeriesController.getStorySeriesCollection(storyId, characters, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, title, titleStartsWith);
-        //Function call returns a promise
-        result.then(function(success){
-			//success case
-			//getting context of response
-			console.log(success.getContext());
-		},function(err){
-			//failure case
-		});
-
-	});
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid username supplied |
+| 404 | User not found |
 
 
 

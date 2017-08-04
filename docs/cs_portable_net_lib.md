@@ -1,71 +1,57 @@
 # Getting started
 
-The Marvel Comics API is a tool to help developers everywhere create amazing, uncanny and incredible web sites and applications using data from the 70-plus years of the Marvel age of comics.
-
-**Ready to get started?** Great!
-
-Here's the short version of what you need to do:
-
-* **Sign up**: [Get an API key](https://developer.marvel.com/account)
-* **Be a good API citizen**: read, understand, and abide by the [terms of use](https://developer.marvel.com/terms) for the Marvel Comics API
-* **Link back**: observe the [attribution and linking guidelines](https://developer.marvel.com/documentation/attribution) when displaying data from the API
-* **Keep in touch**: [tell us about what you're building](https://developer.marvel.com/community) and talk to other developers on our community page
-* **Build cool stuff**
-
-Finally, remember that the Marvel API suite and portal are in beta and this is an evolving project. To the extent that it is possible, we will try to communicate changes to the API before they occur and will try to limit any modifications which cause backwards incompatible changes to applications.
+This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.
 
 ## How to Build
 
-The generated code uses a few NuGet Packages e.g., Newtonsoft.Json, UniRest,
-and Microsoft Base Class Library. The reference to these packages is already
-added as in the packages.config file. If the automatic NuGet package restore
+The generated code uses the Newtonsoft Json.NET NuGet Package. If the automatic NuGet package restore
 is enabled, these dependencies will be installed automatically. Therefore,
 you will need internet access for build.
 
-1. Open the solution (MarvelComics.sln) file.
+1. Open the solution (SwaggerPetstore.sln) file.
 2. Invoke the build process using `Ctrl+Shift+B` shortcut key or using the `Build` menu as shown below.
 
-![Building SDK using Visual Studio](https://apidocs.io/illustration/cs?step=buildSDK&workspaceFolder=MarvelComics-CSharp&workspaceName=MarvelComics&projectName=MarvelComics.PCL)
+![Building SDK using Visual Studio](https://apidocs.io/illustration/cs?step=buildSDK&workspaceFolder=Swagger%20Petstore-CSharp&workspaceName=SwaggerPetstore&projectName=SwaggerPetstore.PCL)
 
 ## How to Use
 
 The build process generates a portable class library, which can be used like a normal class library. The generated library is compatible with Windows Forms, Windows RT, Windows Phone 8,
 Silverlight 5, Xamarin iOS, Xamarin Android and Mono. More information on how to use can be found at the [MSDN Portable Class Libraries documentation](http://msdn.microsoft.com/en-us/library/vstudio/gg597391%28v=vs.100%29.aspx).
 
-The following section explains how to use the MarvelComics library in a new console project.
+The following section explains how to use the SwaggerPetstore library in a new console project.
 
 ### 1. Starting a new project
 
 For starting a new project, right click on the current solution from the *solution explorer* and choose  ``` Add -> New Project ```.
 
-![Add a new project in the existing solution using Visual Studio](https://apidocs.io/illustration/cs?step=addProject&workspaceFolder=MarvelComics-CSharp&workspaceName=MarvelComics&projectName=MarvelComics.PCL)
+![Add a new project in the existing solution using Visual Studio](https://apidocs.io/illustration/cs?step=addProject&workspaceFolder=Swagger%20Petstore-CSharp&workspaceName=SwaggerPetstore&projectName=SwaggerPetstore.PCL)
 
 Next, choose "Console Application", provide a ``` TestConsoleProject ``` as the project name and click ``` OK ```.
 
-![Create a new console project using Visual Studio](https://apidocs.io/illustration/cs?step=createProject&workspaceFolder=MarvelComics-CSharp&workspaceName=MarvelComics&projectName=MarvelComics.PCL)
+![Create a new console project using Visual Studio](https://apidocs.io/illustration/cs?step=createProject&workspaceFolder=Swagger%20Petstore-CSharp&workspaceName=SwaggerPetstore&projectName=SwaggerPetstore.PCL)
 
 ### 2. Set as startup project
 
 The new console project is the entry point for the eventual execution. This requires us to set the ``` TestConsoleProject ``` as the start-up project. To do this, right-click on the  ``` TestConsoleProject ``` and choose  ``` Set as StartUp Project ``` form the context menu.
 
-![Set the new cosole project as the start up project](https://apidocs.io/illustration/cs?step=setStartup&workspaceFolder=MarvelComics-CSharp&workspaceName=MarvelComics&projectName=MarvelComics.PCL)
+![Set the new cosole project as the start up project](https://apidocs.io/illustration/cs?step=setStartup&workspaceFolder=Swagger%20Petstore-CSharp&workspaceName=SwaggerPetstore&projectName=SwaggerPetstore.PCL)
 
 ### 3. Add reference of the library project
 
-In order to use the MarvelComics library in the new project, first we must add a projet reference to the ``` TestConsoleProject ```. First, right click on the ``` References ``` node in the *solution explorer* and click ``` Add Reference... ```.
+In order to use the SwaggerPetstore library in the new project, first we must add a projet reference to the ``` TestConsoleProject ```. First, right click on the ``` References ``` node in the *solution explorer* and click ``` Add Reference... ```.
 
-![Open references of the TestConsoleProject](https://apidocs.io/illustration/cs?step=addReference&workspaceFolder=MarvelComics-CSharp&workspaceName=MarvelComics&projectName=MarvelComics.PCL)
+![Open references of the TestConsoleProject](https://apidocs.io/illustration/cs?step=addReference&workspaceFolder=Swagger%20Petstore-CSharp&workspaceName=SwaggerPetstore&projectName=SwaggerPetstore.PCL)
 
-Next, a window will be displayed where we must set the ``` checkbox ``` on ``` MarvelComics.PCL ``` and click ``` OK ```. By doing this, we have added a reference of the ```MarvelComics.PCL``` project into the new ``` TestConsoleProject ```.
+Next, a window will be displayed where we must set the ``` checkbox ``` on ``` SwaggerPetstore.PCL ``` and click ``` OK ```. By doing this, we have added a reference of the ```SwaggerPetstore.PCL``` project into the new ``` TestConsoleProject ```.
 
-![Add a reference to the TestConsoleProject](https://apidocs.io/illustration/cs?step=createReference&workspaceFolder=MarvelComics-CSharp&workspaceName=MarvelComics&projectName=MarvelComics.PCL)
+![Add a reference to the TestConsoleProject](https://apidocs.io/illustration/cs?step=createReference&workspaceFolder=Swagger%20Petstore-CSharp&workspaceName=SwaggerPetstore&projectName=SwaggerPetstore.PCL)
 
 ### 4. Write sample code
 
 Once the ``` TestConsoleProject ``` is created, a file named ``` Program.cs ``` will be visible in the *solution explorer* with an empty ``` Main ``` method. This is the entry point for the execution of the entire solution.
 Here, you can add code to initialize the client library and acquire the instance of a *Controller* class. Sample code to initialize the client library and using controller methods is given in the subsequent sections.
 
-![Add a reference to the TestConsoleProject](https://apidocs.io/illustration/cs?step=addCode&workspaceFolder=MarvelComics-CSharp&workspaceName=MarvelComics&projectName=MarvelComics.PCL)
+![Add a reference to the TestConsoleProject](https://apidocs.io/illustration/cs?step=addCode&workspaceFolder=Swagger%20Petstore-CSharp&workspaceName=SwaggerPetstore&projectName=SwaggerPetstore.PCL)
 
 ## How to Test
 
@@ -81,7 +67,8 @@ In order to setup authentication and initialization of the API client, you need 
 
 | Parameter | Description |
 |-----------|-------------|
-| apikey | Developer's API key |
+| oAuthClientId | OAuth 2 Client ID |
+| oAuthRedirectUri | OAuth 2 Redirection endpoint or Callback Uri |
 
 
 
@@ -89,9 +76,10 @@ API client can be initialized as following.
 
 ```csharp
 // Configuration parameters and credentials
-string apikey = "apikey"; // Developer's API key
+string oAuthClientId = "oAuthClientId"; // OAuth 2 Client ID
+string oAuthRedirectUri = "oAuthRedirectUri"; // OAuth 2 Redirection endpoint or Callback Uri
 
-MarvelComicsClient client = new MarvelComicsClient(apikey);
+SwaggerPetstoreClient client = new SwaggerPetstoreClient(oAuthClientId, oAuthRedirectUri);
 ```
 
 
@@ -100,76 +88,208 @@ MarvelComicsClient client = new MarvelComicsClient(apikey);
 
 ## <a name="list_of_controllers"></a>List of Controllers
 
-* [EventsController](#events_controller)
-* [CharactersController](#characters_controller)
-* [StoriesController](#stories_controller)
-* [CreatorsController](#creators_controller)
-* [ComicsController](#comics_controller)
-* [SeriesController](#series_controller)
+* [PetController](#pet_controller)
+* [StoreController](#store_controller)
+* [UserController](#user_controller)
 
-## <a name="events_controller"></a>![Class: ](https://apidocs.io/img/class.png "ACME.CORP.API.Controllers.EventsController") EventsController
+## <a name="pet_controller"></a>![Class: ](https://apidocs.io/img/class.png "SwaggerPetstore.PCL.Controllers.PetController") PetController
 
 ### Get singleton instance
 
-The singleton instance of the ``` EventsController ``` class can be accessed from the API Client.
+The singleton instance of the ``` PetController ``` class can be accessed from the API Client.
 
 ```csharp
-EventsController events = client.Events;
+PetController pet = client.Pet;
 ```
 
-### <a name="get_events_collection_by_story_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.EventsController.GetEventsCollectionByStoryId") GetEventsCollectionByStoryId
+### <a name="update_pet"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.PetController.UpdatePet") UpdatePet
 
-> getEventsCollectionByStoryId
+> Update an existing pet
 
 
 ```csharp
-Task<Models.EventDataWrapperModel> GetEventsCollectionByStoryId(
-        string storyId,
-        string characters = null,
-        string comics = null,
-        string creators = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null)
+Task UpdatePet(Models.Pet body)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  | Pet object that needs to be added to the store |
 
 
 #### Example Usage
 
 ```csharp
-string storyId = "storyId";
-string characters = "characters";
-string comics = "comics";
-string creators = "creators";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
+var body = new Models.Pet();
+
+await pet.UpdatePet(body);
+
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Invalid ID supplied |
+| 404 | Pet not found |
+| 405 | Validation exception |
+
+
+### <a name="add_pet"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.PetController.AddPet") AddPet
+
+> Add a new pet to the store
+
+
+```csharp
+Task AddPet(Models.Pet body)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| body |  ``` Required ```  | Pet object that needs to be added to the store |
+
+
+#### Example Usage
+
+```csharp
+var body = new Models.Pet();
+
+await pet.AddPet(body);
+
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 405 | Invalid input |
+
+
+### <a name="find_pets_by_status"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.PetController.FindPetsByStatus") FindPetsByStatus
+
+> Finds Pets by status
+
+
+```csharp
+Task<List<Models.Pet>> FindPetsByStatus(List<Models.Status6Enum> status)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| status |  ``` Required ```  ``` Collection ```  | Status values that need to be considered for filter |
+
+
+#### Example Usage
+
+```csharp
+List<Models.Status6Enum> status = new List<Models.Status6Enum> {Models.Status6Enum.AVAILABLE};
+List<Models.Pet> result = await pet.FindPetsByStatus(status);
+
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Invalid status value |
+
+
+### <a name="find_pets_by_tags"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.PetController.FindPetsByTags") FindPetsByTags
+
+> Finds Pets by tags
+
+
+```csharp
+Task<List<Models.Pet>> FindPetsByTags(List<string> tags)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| tags |  ``` Required ```  ``` Collection ```  | Tags to filter by |
+
+
+#### Example Usage
+
+```csharp
+List<string> tags = new List<string> { "tags" };
+
+List<Models.Pet> result = await pet.FindPetsByTags(tags);
+
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Invalid tag value |
+
+
+### <a name="get_pet_by_id"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.PetController.GetPetById") GetPetById
+
+> Find pet by ID
+
+
+```csharp
+Task<Models.Pet> GetPetById(long petId)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| petId |  ``` Required ```  | ID of pet to return |
+
+
+#### Example Usage
+
+```csharp
+long petId = 100;
+
+Models.Pet result = await pet.GetPetById(petId);
+
+```
+
+#### Errors
+
+| Error Code | Error Description |
+|------------|-------------------|
+| 400 | Invalid ID supplied |
+| 404 | Pet not found |
+
+
+### <a name="update_pet_with_form"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.PetController.UpdatePetWithForm") UpdatePetWithForm
+
+> Updates a pet in the store with form data
+
+
+```csharp
+Task UpdatePetWithForm(long petId, string name = null, string status = null)
+```
+
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| petId |  ``` Required ```  | ID of pet that needs to be updated |
+| name |  ``` Optional ```  | Updated name of the pet |
+| status |  ``` Optional ```  | Updated status of the pet |
+
+
+#### Example Usage
+
+```csharp
+long petId = 100;
 string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
+string status = "status";
 
-Models.EventDataWrapperModel result = await events.GetEventsCollectionByStoryId(storyId, characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series);
+await pet.UpdatePetWithForm(petId, name, status);
 
 ```
 
@@ -177,62 +297,33 @@ Models.EventDataWrapperModel result = await events.GetEventsCollectionByStoryId(
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 405 | Invalid input |
 
 
-### <a name="get_events_collection_by_series_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.EventsController.GetEventsCollectionBySeriesId") GetEventsCollectionBySeriesId
+### <a name="delete_pet"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.PetController.DeletePet") DeletePet
 
-> getEventsCollectionBySeriesId
+> Deletes a pet
 
 
 ```csharp
-Task<Models.EventDataWrapperModel> GetEventsCollectionBySeriesId(
-        string seriesId,
-        string characters = null,
-        string comics = null,
-        string creators = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        List<string> orderBy = null,
-        string stories = null)
+Task DeletePet(long petId, string apiKey = null)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series ID. |
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` Collection ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| stories |  ``` Optional ```  | Return only events which contain the specified stories (accepts a comma-separated list of ids). |
+| petId |  ``` Required ```  | Pet id to delete |
+| apiKey |  ``` Optional ```  | TODO: Add a parameter description |
 
 
 #### Example Usage
 
 ```csharp
-string seriesId = "seriesId";
-string characters = "characters";
-string comics = "comics";
-string creators = "creators";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-List<string> orderBy = new List<string> { "orderBy" };
-string stories = "stories";
+long petId = 100;
+string apiKey = "api_key";
 
-Models.EventDataWrapperModel result = await events.GetEventsCollectionBySeriesId(seriesId, characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, stories);
+await pet.DeletePet(petId, apiKey);
 
 ```
 
@@ -240,355 +331,94 @@ Models.EventDataWrapperModel result = await events.GetEventsCollectionBySeriesId
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid ID supplied |
+| 404 | Pet not found |
 
 
-### <a name="get_creator_events_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.EventsController.GetCreatorEventsCollection") GetCreatorEventsCollection
+### <a name="upload_file"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.PetController.UploadFile") UploadFile
 
-> getCreatorEventsCollection
+> uploads an image
 
 
 ```csharp
-Task<Models.EventDataWrapperModel> GetCreatorEventsCollection(
-        string creatorId,
-        string characters = null,
-        string comics = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null,
-        string stories = null)
+Task<Models.ApiResponse> UploadFile(long petId, string additionalMetadata = null, FileStreamInfo file = null)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| creatorId |  ``` Required ```  | The creator ID. |
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only events which contain the specified stories (accepts a comma-separated list of ids). |
+| petId |  ``` Required ```  | ID of pet to update |
+| additionalMetadata |  ``` Optional ```  | Additional data to pass to server |
+| file |  ``` Optional ```  | file to upload |
 
 
 #### Example Usage
 
 ```csharp
-string creatorId = "creatorId";
-string characters = "characters";
-string comics = "comics";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
-string stories = "stories";
+long petId = 100;
+string additionalMetadata = "additionalMetadata";
+FileStreamInfo file = new FileStreamInfo(new FileStream(@"pathToFile",FileMode.Open));
 
-Models.EventDataWrapperModel result = await events.GetCreatorEventsCollection(creatorId, characters, comics, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
+Models.ApiResponse result = await pet.UploadFile(petId, additionalMetadata, file);
 
 ```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_issue_events_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.EventsController.GetIssueEventsCollection") GetIssueEventsCollection
-
-> getIssueEventsCollection
-
-
-```csharp
-Task<Models.EventDataWrapperModel> GetIssueEventsCollection(
-        string comicId,
-        string characters = null,
-        string creators = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null,
-        string stories = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comicId |  ``` Required ```  | The comic ID. |
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only events which contain the specified stories (accepts a comma-separated list of ids). |
-
-
-#### Example Usage
-
-```csharp
-string comicId = "comicId";
-string characters = "characters";
-string creators = "creators";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
-string stories = "stories";
-
-Models.EventDataWrapperModel result = await events.GetIssueEventsCollection(comicId, characters, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_character_events_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.EventsController.GetCharacterEventsCollection") GetCharacterEventsCollection
-
-> getCharacterEventsCollection
-
-
-```csharp
-Task<Models.EventDataWrapperModel> GetCharacterEventsCollection(
-        string characterId,
-        string comics = null,
-        string creators = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null,
-        string stories = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characterId |  ``` Required ```  | The character ID. |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Filter the event list by name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only events which contain the specified stories (accepts a comma-separated list of ids). |
-
-
-#### Example Usage
-
-```csharp
-string characterId = "characterId";
-string comics = "comics";
-string creators = "creators";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
-string stories = "stories";
-
-Models.EventDataWrapperModel result = await events.GetCharacterEventsCollection(characterId, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_event_individual"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.EventsController.GetEventIndividual") GetEventIndividual
-
-> getEventIndividual
-
-
-```csharp
-Task<Models.EventModel> GetEventIndividual(string eventId)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| eventId |  ``` Required ```  | A single event. |
-
-
-#### Example Usage
-
-```csharp
-string eventId = "eventId";
-
-Models.EventModel result = await events.GetEventIndividual(eventId);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | Event not found. |
-
-
-### <a name="get_events_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.EventsController.GetEventsCollection") GetEventsCollection
-
-> getEventsCollection
-
-
-```csharp
-Task<Models.EventDataWrapperModel> GetEventsCollection(
-        string characters = null,
-        string comics = null,
-        string creators = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null,
-        string stories = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characters |  ``` Optional ```  | Return only events which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only events which take place in the specified comics (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only events which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only events which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only events which match the specified name. |
-| nameStartsWith |  ``` Optional ```  | Return events with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "startDate", "modified", "-name", "-startDate", "-modified") |
-| series |  ``` Optional ```  | Return only events which are part of the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only events which take place in the specified stories (accepts a comma-separated list of ids). |
-
-
-#### Example Usage
-
-```csharp
-string characters = "characters";
-string comics = "comics";
-string creators = "creators";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
-string stories = "stories";
-
-Models.EventDataWrapperModel result = await events.GetEventsCollection(characters, comics, creators, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
 
 
 [Back to List of Controllers](#list_of_controllers)
 
-## <a name="characters_controller"></a>![Class: ](https://apidocs.io/img/class.png "ACME.CORP.API.Controllers.CharactersController") CharactersController
+## <a name="store_controller"></a>![Class: ](https://apidocs.io/img/class.png "SwaggerPetstore.PCL.Controllers.StoreController") StoreController
 
 ### Get singleton instance
 
-The singleton instance of the ``` CharactersController ``` class can be accessed from the API Client.
+The singleton instance of the ``` StoreController ``` class can be accessed from the API Client.
 
 ```csharp
-CharactersController characters = client.Characters;
+StoreController store = client.Store;
 ```
 
-### <a name="get_character_collection_by_story_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CharactersController.GetCharacterCollectionByStoryId") GetCharacterCollectionByStoryId
+### <a name="get_inventory"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.StoreController.GetInventory") GetInventory
 
-> getCharacterCollectionByStoryId
+> Returns pet inventories by status
 
 
 ```csharp
-Task<Models.CharacterDataWrapperModel> GetCharacterCollectionByStoryId(
-        string storyId,
-        string comics = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null)
+Task<int?> GetInventory()
+```
+
+#### Example Usage
+
+```csharp
+
+int? result = await store.GetInventory();
+
+```
+
+
+### <a name="create_place_order"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.StoreController.CreatePlaceOrder") CreatePlaceOrder
+
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Place an order for a pet
+
+
+```csharp
+Task<Models.Order> CreatePlaceOrder(Models.Order body)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| comics |  ``` Optional ```  | Return only characters which appear in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only characters which appear comics that took place in the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| series |  ``` Optional ```  | Return only characters which appear the specified series (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  | order placed for purchasing the pet |
 
 
 #### Example Usage
 
 ```csharp
-string storyId = "storyId";
-string comics = "comics";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
+var body = new Models.Order();
 
-Models.CharacterDataWrapperModel result = await characters.GetCharacterCollectionByStoryId(storyId, comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series);
+Models.Order result = await store.CreatePlaceOrder(body);
 
 ```
 
@@ -596,59 +426,33 @@ Models.CharacterDataWrapperModel result = await characters.GetCharacterCollectio
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid Order |
 
 
-### <a name="get_series_character_wrapper"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CharactersController.GetSeriesCharacterWrapper") GetSeriesCharacterWrapper
+### <a name="get_order_by_id"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.StoreController.GetOrderById") GetOrderById
 
-> getSeriesCharacterWrapper
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Find purchase order by ID
 
 
 ```csharp
-Task<Models.CharacterDataWrapperModel> GetSeriesCharacterWrapper(
-        string seriesId,
-        string comics = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string stories = null)
+Task<Models.Order> GetOrderById(long orderId)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series id. |
-| comics |  ``` Optional ```  | Return only characters which appear in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only characters which appear comics that took place in the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| stories |  ``` Optional ```  | Return only characters which appear the specified stories (accepts a comma-separated list of ids). |
+| orderId |  ``` Required ```  | ID of pet that needs to be fetched |
 
 
 #### Example Usage
 
 ```csharp
-string seriesId = "seriesId";
-string comics = "comics";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string stories = "stories";
+long orderId = 100;
 
-Models.CharacterDataWrapperModel result = await characters.GetSeriesCharacterWrapper(seriesId, comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, stories);
+Models.Order result = await store.GetOrderById(orderId);
 
 ```
 
@@ -656,59 +460,34 @@ Models.CharacterDataWrapperModel result = await characters.GetSeriesCharacterWra
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid ID supplied |
+| 404 | Order not found |
 
 
-### <a name="get_event_character_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CharactersController.GetEventCharacterCollection") GetEventCharacterCollection
+### <a name="delete_order"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.StoreController.DeleteOrder") DeleteOrder
 
-> getEventCharacterCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Delete purchase order by ID
 
 
 ```csharp
-Task<Models.CharacterDataWrapperModel> GetEventCharacterCollection(
-        string eventId,
-        string comics = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null,
-        string stories = null)
+Task DeleteOrder(long orderId)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| eventId |  ``` Required ```  | The event ID |
-| comics |  ``` Optional ```  | Return only characters which appear in the specified comics (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| series |  ``` Optional ```  | Return only characters which appear the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only characters which appear the specified stories (accepts a comma-separated list of ids). |
+| orderId |  ``` Required ```  | ID of the order that needs to be deleted |
 
 
 #### Example Usage
 
 ```csharp
-string eventId = "eventId";
-string comics = "comics";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
-string stories = "stories";
+long orderId = 100;
 
-Models.CharacterDataWrapperModel result = await characters.GetEventCharacterCollection(eventId, comics, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
+await store.DeleteOrder(orderId);
 
 ```
 
@@ -716,220 +495,46 @@ Models.CharacterDataWrapperModel result = await characters.GetEventCharacterColl
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_comic_character_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CharactersController.GetComicCharacterCollection") GetComicCharacterCollection
-
-> getComicCharacterCollection
-
-
-```csharp
-Task<Models.CharacterDataWrapperModel> GetComicCharacterCollection(
-        string comicId,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null,
-        string stories = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comicId |  ``` Required ```  | The comic id. |
-| events |  ``` Optional ```  | Return only characters which appear comics that took place in the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| series |  ``` Optional ```  | Return only characters which appear the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only characters which appear the specified stories (accepts a comma-separated list of ids). |
-
-
-#### Example Usage
-
-```csharp
-string comicId = "comicId";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
-string stories = "stories";
-
-Models.CharacterDataWrapperModel result = await characters.GetComicCharacterCollection(comicId, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_character_individual"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CharactersController.GetCharacterIndividual") GetCharacterIndividual
-
-> getCharacterIndividual
-
-
-```csharp
-Task<Models.CharacterModel> GetCharacterIndividual(string characterId)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characterId |  ``` Required ```  | A single character id. |
-
-
-#### Example Usage
-
-```csharp
-string characterId = "characterId";
-
-Models.CharacterModel result = await characters.GetCharacterIndividual(characterId);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | Character not found. |
-
-
-### <a name="get_character_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CharactersController.GetCharacterCollection") GetCharacterCollection
-
-> getCharacterCollection
-
-
-```csharp
-Task<Models.CharacterDataWrapperModel> GetCharacterCollection(
-        string comics = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string name = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "name",
-        string series = null,
-        string stories = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comics |  ``` Optional ```  | Return only characters which appear in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only characters which appear in the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only characters which have been modified since the specified date. |
-| name |  ``` Optional ```  | Return only characters matching the specified full character name (e.g. Spider-Man). |
-| nameStartsWith |  ``` Optional ```  | Return characters with names that begin with the specified string (e.g. Sp). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "name", "modified", "-name", "-modified") |
-| series |  ``` Optional ```  | Return only characters which appear the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only characters which appear the specified stories (accepts a comma-separated list of ids). |
-
-
-#### Example Usage
-
-```csharp
-string comics = "comics";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string name = "name";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "name";
-string series = "series";
-string stories = "stories";
-
-Models.CharacterDataWrapperModel result = await characters.GetCharacterCollection(comics, events, limit, modifiedSince, name, nameStartsWith, offset, orderBy, series, stories);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid ID supplied |
+| 404 | Order not found |
 
 
 [Back to List of Controllers](#list_of_controllers)
 
-## <a name="stories_controller"></a>![Class: ](https://apidocs.io/img/class.png "ACME.CORP.API.Controllers.StoriesController") StoriesController
+## <a name="user_controller"></a>![Class: ](https://apidocs.io/img/class.png "SwaggerPetstore.PCL.Controllers.UserController") UserController
 
 ### Get singleton instance
 
-The singleton instance of the ``` StoriesController ``` class can be accessed from the API Client.
+The singleton instance of the ``` UserController ``` class can be accessed from the API Client.
 
 ```csharp
-StoriesController stories = client.Stories;
+UserController user = client.User;
 ```
 
-### <a name="get_story_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.StoriesController.GetStoryCollection") GetStoryCollection
+### <a name="create_user"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.UserController.CreateUser") CreateUser
 
-> getStoryCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Create user
 
 
 ```csharp
-Task<Models.StoryDataWrapperModel> GetStoryCollection(
-        string characters = null,
-        string comics = null,
-        string creators = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "id",
-        string series = null)
+Task CreateUser(Models.User body)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only stories contained in the specified (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  | Created user object |
 
 
 #### Example Usage
 
 ```csharp
-string characters = "characters";
-string comics = "comics";
-string creators = "creators";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "id";
-string series = "series";
+var body = new Models.User();
 
-Models.StoryDataWrapperModel result = await stories.GetStoryCollection(characters, comics, creators, events, limit, modifiedSince, offset, orderBy, series);
+await user.CreateUser(body);
 
 ```
 
@@ -937,56 +542,33 @@ Models.StoryDataWrapperModel result = await stories.GetStoryCollection(character
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 0 | successful operation |
 
 
-### <a name="get_series_story_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.StoriesController.GetSeriesStoryCollection") GetSeriesStoryCollection
+### <a name="create_users_with_array_input"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.UserController.CreateUsersWithArrayInput") CreateUsersWithArrayInput
 
-> getSeriesStoryCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Creates list of users with given input array
 
 
 ```csharp
-Task<Models.StoryDataWrapperModel> GetSeriesStoryCollection(
-        string seriesId,
-        string characters = null,
-        string comics = null,
-        string creators = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "id")
+Task CreateUsersWithArrayInput(List<Models.User> body)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series ID. |
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only stories contained in the specified (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
+| body |  ``` Required ```  ``` Collection ```  | List of user object |
 
 
 #### Example Usage
 
 ```csharp
-string seriesId = "seriesId";
-string characters = "characters";
-string comics = "comics";
-string creators = "creators";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "id";
+var body = new List<Models.User>();
 
-Models.StoryDataWrapperModel result = await stories.GetSeriesStoryCollection(seriesId, characters, comics, creators, events, limit, modifiedSince, offset, orderBy);
+await user.CreateUsersWithArrayInput(body);
 
 ```
 
@@ -994,56 +576,33 @@ Models.StoryDataWrapperModel result = await stories.GetSeriesStoryCollection(ser
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 0 | successful operation |
 
 
-### <a name="get_event_story_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.StoriesController.GetEventStoryCollection") GetEventStoryCollection
+### <a name="create_users_with_list_input"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.UserController.CreateUsersWithListInput") CreateUsersWithListInput
 
-> getEventStoryCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Creates list of users with given input array
 
 
 ```csharp
-Task<Models.StoryDataWrapperModel> GetEventStoryCollection(
-        string eventId,
-        string characters = null,
-        string comics = null,
-        string creators = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "id",
-        string series = null)
+Task CreateUsersWithListInput(List<Models.User> body)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| eventId |  ``` Required ```  | The ID of the event. |
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only stories contained in the specified (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
+| body |  ``` Required ```  ``` Collection ```  | List of user object |
 
 
 #### Example Usage
 
 ```csharp
-string eventId = "eventId";
-string characters = "characters";
-string comics = "comics";
-string creators = "creators";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "id";
-string series = "series";
+var body = new List<Models.User>();
 
-Models.StoryDataWrapperModel result = await stories.GetEventStoryCollection(eventId, characters, comics, creators, limit, modifiedSince, offset, orderBy, series);
+await user.CreateUsersWithListInput(body);
 
 ```
 
@@ -1051,56 +610,35 @@ Models.StoryDataWrapperModel result = await stories.GetEventStoryCollection(even
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 0 | successful operation |
 
 
-### <a name="get_creator_story_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.StoriesController.GetCreatorStoryCollection") GetCreatorStoryCollection
+### <a name="get_login_user"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.UserController.GetLoginUser") GetLoginUser
 
-> getCreatorStoryCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Logs user into the system
 
 
 ```csharp
-Task<Models.StoryDataWrapperModel> GetCreatorStoryCollection(
-        string creatorId,
-        string characters = null,
-        string comics = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "id",
-        string series = null)
+Task<string> GetLoginUser(string username, string password)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| creatorId |  ``` Required ```  | The ID of the creator. |
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only stories contained in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
+| username |  ``` Required ```  | The user name for login |
+| password |  ``` Required ```  | The password for login in clear text |
 
 
 #### Example Usage
 
 ```csharp
-string creatorId = "creatorId";
-string characters = "characters";
-string comics = "comics";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "id";
-string series = "series";
+string username = "username";
+string password = "password";
 
-Models.StoryDataWrapperModel result = await stories.GetCreatorStoryCollection(creatorId, characters, comics, events, limit, modifiedSince, offset, orderBy, series);
+string result = await user.GetLoginUser(username, password);
 
 ```
 
@@ -1108,56 +646,25 @@ Models.StoryDataWrapperModel result = await stories.GetCreatorStoryCollection(cr
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid username/password supplied |
 
 
-### <a name="get_comic_story_collection_by_comic_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.StoriesController.GetComicStoryCollectionByComicId") GetComicStoryCollectionByComicId
+### <a name="get_logout_user"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.UserController.GetLogoutUser") GetLogoutUser
 
-> getComicStoryCollectionByComicId
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Logs out current logged in user session
 
 
 ```csharp
-Task<Models.StoryDataWrapperModel> GetComicStoryCollectionByComicId(
-        string comicId,
-        string characters = null,
-        string creators = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "id",
-        string series = null)
+Task GetLogoutUser()
 ```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comicId |  ``` Required ```  | The comic ID. |
-| characters |  ``` Optional ```  | Return only stories which feature the specified characters (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
-
 
 #### Example Usage
 
 ```csharp
-string comicId = "comicId";
-string characters = "characters";
-string creators = "creators";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "id";
-string series = "series";
 
-Models.StoryDataWrapperModel result = await stories.GetComicStoryCollectionByComicId(comicId, characters, creators, events, limit, modifiedSince, offset, orderBy, series);
+await user.GetLogoutUser();
 
 ```
 
@@ -1165,56 +672,33 @@ Models.StoryDataWrapperModel result = await stories.GetComicStoryCollectionByCom
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 0 | successful operation |
 
 
-### <a name="get_character_story_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.StoriesController.GetCharacterStoryCollection") GetCharacterStoryCollection
+### <a name="get_user_by_name"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.UserController.GetUserByName") GetUserByName
 
-> getCharacterStoryCollection
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Get user by user name
 
 
 ```csharp
-Task<Models.StoryDataWrapperModel> GetCharacterStoryCollection(
-        string characterId,
-        string comics = null,
-        string creators = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "id",
-        string series = null)
+Task<Models.User> GetUserByName(string username)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| characterId |  ``` Required ```  | The character ID. |
-| comics |  ``` Optional ```  | Return only stories contained in the specified (accepts a comma-separated list of ids). |
-| creators |  ``` Optional ```  | Return only stories which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only stories which take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only stories which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "id", "modified", "-id", "-modified") |
-| series |  ``` Optional ```  | Return only stories contained the specified series (accepts a comma-separated list of ids). |
+| username |  ``` Required ```  | The name that needs to be fetched. Use user1 for testing. |
 
 
 #### Example Usage
 
 ```csharp
-string characterId = "characterId";
-string comics = "comics";
-string creators = "creators";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "id";
-string series = "series";
+string username = "username";
 
-Models.StoryDataWrapperModel result = await stories.GetCharacterStoryCollection(characterId, comics, creators, events, limit, modifiedSince, offset, orderBy, series);
+Models.User result = await user.GetUserByName(username);
 
 ```
 
@@ -1222,31 +706,36 @@ Models.StoryDataWrapperModel result = await stories.GetCharacterStoryCollection(
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid username supplied |
+| 404 | User not found |
 
 
-### <a name="get_story_individual"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.StoriesController.GetStoryIndividual") GetStoryIndividual
+### <a name="update_user"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.UserController.UpdateUser") UpdateUser
 
-> getStoryIndividual
+> *Tags:*  ``` Skips Authentication ``` 
+
+> Updated user
 
 
 ```csharp
-Task<Models.StoryModel> GetStoryIndividual(string storyId)
+Task UpdateUser(string username, Models.User body)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| storyId |  ``` Required ```  | Filter by story id. |
+| username |  ``` Required ```  | name that need to be updated |
+| body |  ``` Required ```  | Updated user object |
 
 
 #### Example Usage
 
 ```csharp
-string storyId = "storyId";
+string username = "username";
+var body = new Models.User();
 
-Models.StoryModel result = await stories.GetStoryIndividual(storyId);
+await user.UpdateUser(username, body);
 
 ```
 
@@ -1254,43 +743,34 @@ Models.StoryModel result = await stories.GetStoryIndividual(storyId);
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 404 | Story not found. |
+| 400 | Invalid user supplied |
+| 404 | User not found |
 
 
-[Back to List of Controllers](#list_of_controllers)
+### <a name="delete_user"></a>![Method: ](https://apidocs.io/img/method.png "SwaggerPetstore.PCL.Controllers.UserController.DeleteUser") DeleteUser
 
-## <a name="creators_controller"></a>![Class: ](https://apidocs.io/img/class.png "ACME.CORP.API.Controllers.CreatorsController") CreatorsController
+> *Tags:*  ``` Skips Authentication ``` 
 
-### Get singleton instance
-
-The singleton instance of the ``` CreatorsController ``` class can be accessed from the API Client.
-
-```csharp
-CreatorsController creators = client.Creators;
-```
-
-### <a name="get_creator_individual"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CreatorsController.GetCreatorIndividual") GetCreatorIndividual
-
-> getCreatorIndividual
+> Delete user
 
 
 ```csharp
-Task<Models.CreatorModel> GetCreatorIndividual(string creatorId)
+Task DeleteUser(string username)
 ```
 
 #### Parameters
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| creatorId |  ``` Required ```  | A single creator id. |
+| username |  ``` Required ```  | The name that needs to be deleted |
 
 
 #### Example Usage
 
 ```csharp
-string creatorId = "creatorId";
+string username = "username";
 
-Models.CreatorModel result = await creators.GetCreatorIndividual(creatorId);
+await user.DeleteUser(username);
 
 ```
 
@@ -1298,1514 +778,8 @@ Models.CreatorModel result = await creators.GetCreatorIndividual(creatorId);
 
 | Error Code | Error Description |
 |------------|-------------------|
-| 404 | Creator not found. |
-
-
-### <a name="get_creator_collection_by_comic_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CreatorsController.GetCreatorCollectionByComicId") GetCreatorCollectionByComicId
-
-> getCreatorCollectionByComicId
-
-
-```csharp
-Task<Models.CreatorDataWrapperModel> GetCreatorCollectionByComicId(
-        string comicId,
-        string comics = null,
-        string firstName = null,
-        string firstNameStartsWith = null,
-        string lastName = null,
-        string lastNameStartsWith = null,
-        string limit = null,
-        string middleName = null,
-        string middleNameStartsWith = null,
-        string modifiedSince = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "lastName",
-        string series = null,
-        string stories = null,
-        string suffix = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comicId |  ``` Required ```  | The comic id. |
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| series |  ``` Optional ```  | Return only creators who worked on the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only creators who worked on the specified stories (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-#### Example Usage
-
-```csharp
-string comicId = "comicId";
-string comics = "comics";
-string firstName = "firstName";
-string firstNameStartsWith = "firstNameStartsWith";
-string lastName = "lastName";
-string lastNameStartsWith = "lastNameStartsWith";
-string limit = "limit";
-string middleName = "middleName";
-string middleNameStartsWith = "middleNameStartsWith";
-string modifiedSince = "modifiedSince";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "lastName";
-string series = "series";
-string stories = "stories";
-string suffix = "suffix";
-
-Models.CreatorDataWrapperModel result = await creators.GetCreatorCollectionByComicId(comicId, comics, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_creator_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CreatorsController.GetCreatorCollection") GetCreatorCollection
-
-> getCreatorCollection
-
-
-```csharp
-Task<Models.CreatorDataWrapperModel> GetCreatorCollection(
-        string comics = null,
-        string events = null,
-        string firstName = null,
-        string firstNameStartsWith = null,
-        string lastName = null,
-        string lastNameStartsWith = null,
-        string limit = null,
-        string middleName = null,
-        string middleNameStartsWith = null,
-        string modifiedSince = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "lastName",
-        string series = null,
-        string stories = null,
-        string suffix = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only creators who worked on comics that took place in the specified events (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. Brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| series |  ``` Optional ```  | Return only creators who worked on the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only creators who worked on the specified stories (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-#### Example Usage
-
-```csharp
-string comics = "comics";
-string events = "events";
-string firstName = "firstName";
-string firstNameStartsWith = "firstNameStartsWith";
-string lastName = "lastName";
-string lastNameStartsWith = "lastNameStartsWith";
-string limit = "limit";
-string middleName = "middleName";
-string middleNameStartsWith = "middleNameStartsWith";
-string modifiedSince = "modifiedSince";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "lastName";
-string series = "series";
-string stories = "stories";
-string suffix = "suffix";
-
-Models.CreatorDataWrapperModel result = await creators.GetCreatorCollection(comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_creator_collection_by_event_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CreatorsController.GetCreatorCollectionByEventId") GetCreatorCollectionByEventId
-
-> getCreatorCollectionByEventId
-
-
-```csharp
-Task<Models.CreatorDataWrapperModel> GetCreatorCollectionByEventId(
-        string eventId,
-        string comics = null,
-        string firstName = null,
-        string firstNameStartsWith = null,
-        string lastName = null,
-        string lastNameStartsWith = null,
-        string limit = null,
-        string middleName = null,
-        string middleNameStartsWith = null,
-        string modifiedSince = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "lastName",
-        string series = null,
-        string stories = null,
-        string suffix = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| eventId |  ``` Required ```  | The event ID. |
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| series |  ``` Optional ```  | Return only creators who worked on the specified series (accepts a comma-separated list of ids). |
-| stories |  ``` Optional ```  | Return only creators who worked on the specified stories (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-#### Example Usage
-
-```csharp
-string eventId = "eventId";
-string comics = "comics";
-string firstName = "firstName";
-string firstNameStartsWith = "firstNameStartsWith";
-string lastName = "lastName";
-string lastNameStartsWith = "lastNameStartsWith";
-string limit = "limit";
-string middleName = "middleName";
-string middleNameStartsWith = "middleNameStartsWith";
-string modifiedSince = "modifiedSince";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "lastName";
-string series = "series";
-string stories = "stories";
-string suffix = "suffix";
-
-Models.CreatorDataWrapperModel result = await creators.GetCreatorCollectionByEventId(eventId, comics, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, stories, suffix);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_creator_collection_by_series_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CreatorsController.GetCreatorCollectionBySeriesId") GetCreatorCollectionBySeriesId
-
-> getCreatorCollectionBySeriesId
-
-
-```csharp
-Task<Models.CreatorDataWrapperModel> GetCreatorCollectionBySeriesId(
-        string seriesId,
-        string comics = null,
-        string events = null,
-        string firstName = null,
-        string firstNameStartsWith = null,
-        string lastName = null,
-        string lastNameStartsWith = null,
-        string limit = null,
-        string middleName = null,
-        string middleNameStartsWith = null,
-        string modifiedSince = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "lastName",
-        string stories = null,
-        string suffix = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series ID. |
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only creators who worked on comics that took place in the specified events (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| stories |  ``` Optional ```  | Return only creators who worked on the specified stories (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-#### Example Usage
-
-```csharp
-string seriesId = "seriesId";
-string comics = "comics";
-string events = "events";
-string firstName = "firstName";
-string firstNameStartsWith = "firstNameStartsWith";
-string lastName = "lastName";
-string lastNameStartsWith = "lastNameStartsWith";
-string limit = "limit";
-string middleName = "middleName";
-string middleNameStartsWith = "middleNameStartsWith";
-string modifiedSince = "modifiedSince";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "lastName";
-string stories = "stories";
-string suffix = "suffix";
-
-Models.CreatorDataWrapperModel result = await creators.GetCreatorCollectionBySeriesId(seriesId, comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, stories, suffix);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_creator_collection_by_story_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.CreatorsController.GetCreatorCollectionByStoryId") GetCreatorCollectionByStoryId
-
-> getCreatorCollectionByStoryId
-
-
-```csharp
-Task<Models.CreatorDataWrapperModel> GetCreatorCollectionByStoryId(
-        string storyId,
-        string comics = null,
-        string events = null,
-        string firstName = null,
-        string firstNameStartsWith = null,
-        string lastName = null,
-        string lastNameStartsWith = null,
-        string limit = null,
-        string middleName = null,
-        string middleNameStartsWith = null,
-        string modifiedSince = null,
-        string nameStartsWith = null,
-        string offset = null,
-        string orderBy = "lastName",
-        string series = null,
-        string suffix = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| comics |  ``` Optional ```  | Return only creators who worked on in the specified comics (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only creators who worked on comics that took place in the specified events (accepts a comma-separated list of ids). |
-| firstName |  ``` Optional ```  | Filter by creator first name (e.g. brian). |
-| firstNameStartsWith |  ``` Optional ```  | Filter by creator first names that match critera (e.g. B, St L). |
-| lastName |  ``` Optional ```  | Filter by creator last name (e.g. Bendis). |
-| lastNameStartsWith |  ``` Optional ```  | Filter by creator last names that match critera (e.g. Ben). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| middleName |  ``` Optional ```  | Filter by creator middle name (e.g. Michael). |
-| middleNameStartsWith |  ``` Optional ```  | Filter by creator middle names that match critera (e.g. Mi). |
-| modifiedSince |  ``` Optional ```  | Return only creators which have been modified since the specified date. |
-| nameStartsWith |  ``` Optional ```  | Filter by creator names that match critera (e.g. B, St L). |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "lastName", "firstName", "middleName", "suffix", "modified", "-lastName", "-firstName", "-middleName", "-suffix", "-modified") |
-| series |  ``` Optional ```  | Return only creators who worked on the specified series (accepts a comma-separated list of ids). |
-| suffix |  ``` Optional ```  | Filter by suffix or honorific (e.g. Jr., Sr.). |
-
-
-#### Example Usage
-
-```csharp
-string storyId = "storyId";
-string comics = "comics";
-string events = "events";
-string firstName = "firstName";
-string firstNameStartsWith = "firstNameStartsWith";
-string lastName = "lastName";
-string lastNameStartsWith = "lastNameStartsWith";
-string limit = "limit";
-string middleName = "middleName";
-string middleNameStartsWith = "middleNameStartsWith";
-string modifiedSince = "modifiedSince";
-string nameStartsWith = "nameStartsWith";
-string offset = "offset";
-string orderBy = "lastName";
-string series = "series";
-string suffix = "suffix";
-
-Models.CreatorDataWrapperModel result = await creators.GetCreatorCollectionByStoryId(storyId, comics, events, firstName, firstNameStartsWith, lastName, lastNameStartsWith, limit, middleName, middleNameStartsWith, modifiedSince, nameStartsWith, offset, orderBy, series, suffix);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="comics_controller"></a>![Class: ](https://apidocs.io/img/class.png "ACME.CORP.API.Controllers.ComicsController") ComicsController
-
-### Get singleton instance
-
-The singleton instance of the ``` ComicsController ``` class can be accessed from the API Client.
-
-```csharp
-ComicsController comics = client.Comics;
-```
-
-### <a name="get_comic_individual"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.ComicsController.GetComicIndividual") GetComicIndividual
-
-> getComicIndividual
-
-
-```csharp
-Task<Models.ComicModel> GetComicIndividual(string comicId)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| comicId |  ``` Required ```  | A single comic. |
-
-
-#### Example Usage
-
-```csharp
-string comicId = "comicId";
-
-Models.ComicModel result = await comics.GetComicIndividual(comicId);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | Comic not found. |
-
-
-### <a name="get_comics_character_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.ComicsController.GetComicsCharacterCollection") GetComicsCharacterCollection
-
-> getComicsCharacterCollection
-
-
-```csharp
-Task<Models.ComicDataWrapperModel> GetComicsCharacterCollection(
-        string characterId,
-        string collaborators = null,
-        string creators = null,
-        Models.DateDescriptorEnum? dateDescriptor = null,
-        string dateRange = null,
-        string diamondCode = null,
-        string digitalId = null,
-        string ean = null,
-        string events = null,
-        string format = "comic",
-        Models.FormatTypeEnum? formatType = null,
-        string hasDigitalIssue = "true",
-        string isbn = null,
-        string issn = null,
-        string issueNumber = null,
-        string limit = null,
-        string modifiedSince = null,
-        string noVariants = "true",
-        string offset = null,
-        string orderBy = "focDate",
-        string series = null,
-        string sharedAppearances = null,
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null,
-        string upc = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characterId |  ``` Required ```  | The character id. |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-#### Example Usage
-
-```csharp
-string characterId = "characterId";
-string collaborators = "collaborators";
-string creators = "creators";
-var dateDescriptor = Models.DateDescriptorEnum?Helper.ParseString("lastWeek");
-string dateRange = "dateRange";
-string diamondCode = "diamondCode";
-string digitalId = "digitalId";
-string ean = "ean";
-string events = "events";
-string format = "comic";
-var formatType = Models.FormatTypeEnum?Helper.ParseString("collection");
-string hasDigitalIssue = "true";
-string isbn = "isbn";
-string issn = "issn";
-string issueNumber = "issueNumber";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string noVariants = "true";
-string offset = "offset";
-string orderBy = "focDate";
-string series = "series";
-string sharedAppearances = "sharedAppearances";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-string upc = "upc";
-
-Models.ComicDataWrapperModel result = await comics.GetComicsCharacterCollection(characterId, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_comics_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.ComicsController.GetComicsCollection") GetComicsCollection
-
-> getComicsCollection
-
-
-```csharp
-Task<Models.ComicDataWrapperModel> GetComicsCollection(
-        string characters = null,
-        string collaborators = null,
-        string creators = null,
-        Models.DateDescriptorEnum? dateDescriptor = null,
-        string dateRange = null,
-        string diamondCode = null,
-        string digitalId = null,
-        string ean = null,
-        string events = null,
-        string format = "comic",
-        Models.FormatTypeEnum? formatType = null,
-        string hasDigitalIssue = "true",
-        string isbn = null,
-        string issn = null,
-        string issueNumber = null,
-        string limit = null,
-        string modifiedSince = null,
-        string noVariants = "true",
-        string offset = null,
-        string orderBy = "focDate",
-        string series = null,
-        string sharedAppearances = null,
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null,
-        string upc = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). Accepts a comma-separated list of ids. |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variants (alternate covers, secondary printings, director's cuts, etc.) from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). Accepts a comma-separated list of ids. |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-#### Example Usage
-
-```csharp
-string characters = "characters";
-string collaborators = "collaborators";
-string creators = "creators";
-var dateDescriptor = Models.DateDescriptorEnum?Helper.ParseString("lastWeek");
-string dateRange = "dateRange";
-string diamondCode = "diamondCode";
-string digitalId = "digitalId";
-string ean = "ean";
-string events = "events";
-string format = "comic";
-var formatType = Models.FormatTypeEnum?Helper.ParseString("collection");
-string hasDigitalIssue = "true";
-string isbn = "isbn";
-string issn = "issn";
-string issueNumber = "issueNumber";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string noVariants = "true";
-string offset = "offset";
-string orderBy = "focDate";
-string series = "series";
-string sharedAppearances = "sharedAppearances";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-string upc = "upc";
-
-Models.ComicDataWrapperModel result = await comics.GetComicsCollection(characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_comics_collection_by_creator_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.ComicsController.GetComicsCollectionByCreatorId") GetComicsCollectionByCreatorId
-
-> getComicsCollectionByCreatorId
-
-
-```csharp
-Task<Models.ComicDataWrapperModel> GetComicsCollectionByCreatorId(
-        string creatorId,
-        string characters = null,
-        string collaborators = null,
-        Models.DateDescriptorEnum? dateDescriptor = null,
-        string dateRange = null,
-        string diamondCode = null,
-        string digitalId = null,
-        string ean = null,
-        string events = null,
-        string format = "comic",
-        Models.FormatTypeEnum? formatType = null,
-        string hasDigitalIssue = "true",
-        string isbn = null,
-        string issn = null,
-        string issueNumber = null,
-        string limit = null,
-        string modifiedSince = null,
-        string noVariants = "true",
-        string offset = null,
-        string orderBy = "focDate",
-        string series = null,
-        string sharedAppearances = null,
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null,
-        string upc = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| creatorId |  ``` Required ```  | The creator ID. |
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-#### Example Usage
-
-```csharp
-string creatorId = "creatorId";
-string characters = "characters";
-string collaborators = "collaborators";
-var dateDescriptor = Models.DateDescriptorEnum?Helper.ParseString("lastWeek");
-string dateRange = "dateRange";
-string diamondCode = "diamondCode";
-string digitalId = "digitalId";
-string ean = "ean";
-string events = "events";
-string format = "comic";
-var formatType = Models.FormatTypeEnum?Helper.ParseString("collection");
-string hasDigitalIssue = "true";
-string isbn = "isbn";
-string issn = "issn";
-string issueNumber = "issueNumber";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string noVariants = "true";
-string offset = "offset";
-string orderBy = "focDate";
-string series = "series";
-string sharedAppearances = "sharedAppearances";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-string upc = "upc";
-
-Models.ComicDataWrapperModel result = await comics.GetComicsCollectionByCreatorId(creatorId, characters, collaborators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_comics_collection_by_event_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.ComicsController.GetComicsCollectionByEventId") GetComicsCollectionByEventId
-
-> getComicsCollectionByEventId
-
-
-```csharp
-Task<Models.ComicDataWrapperModel> GetComicsCollectionByEventId(
-        string eventId,
-        string characters = null,
-        string collaborators = null,
-        string creators = null,
-        Models.DateDescriptorEnum? dateDescriptor = null,
-        string dateRange = null,
-        string diamondCode = null,
-        string digitalId = null,
-        string ean = null,
-        string events = null,
-        string format = "comic",
-        Models.FormatTypeEnum? formatType = null,
-        string hasDigitalIssue = "true",
-        string isbn = null,
-        string issn = null,
-        string issueNumber = null,
-        string limit = null,
-        string modifiedSince = null,
-        string noVariants = "true",
-        string offset = null,
-        string orderBy = "focDate",
-        string series = null,
-        string sharedAppearances = null,
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null,
-        string upc = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| eventId |  ``` Required ```  | The event id. |
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-#### Example Usage
-
-```csharp
-string eventId = "eventId";
-string characters = "characters";
-string collaborators = "collaborators";
-string creators = "creators";
-var dateDescriptor = Models.DateDescriptorEnum?Helper.ParseString("lastWeek");
-string dateRange = "dateRange";
-string diamondCode = "diamondCode";
-string digitalId = "digitalId";
-string ean = "ean";
-string events = "events";
-string format = "comic";
-var formatType = Models.FormatTypeEnum?Helper.ParseString("collection");
-string hasDigitalIssue = "true";
-string isbn = "isbn";
-string issn = "issn";
-string issueNumber = "issueNumber";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string noVariants = "true";
-string offset = "offset";
-string orderBy = "focDate";
-string series = "series";
-string sharedAppearances = "sharedAppearances";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-string upc = "upc";
-
-Models.ComicDataWrapperModel result = await comics.GetComicsCollectionByEventId(eventId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_comics_collection_by_series_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.ComicsController.GetComicsCollectionBySeriesId") GetComicsCollectionBySeriesId
-
-> getComicsCollectionBySeriesId
-
-
-```csharp
-Task<Models.ComicDataWrapperModel> GetComicsCollectionBySeriesId(
-        string seriesId,
-        string characters = null,
-        string collaborators = null,
-        string creators = null,
-        Models.DateDescriptorEnum? dateDescriptor = null,
-        string dateRange = null,
-        string diamondCode = null,
-        string digitalId = null,
-        string ean = null,
-        string events = null,
-        string format = "comic",
-        Models.FormatTypeEnum? formatType = null,
-        string hasDigitalIssue = "true",
-        string isbn = null,
-        string issn = null,
-        string issueNumber = null,
-        string limit = null,
-        string modifiedSince = null,
-        string noVariants = "true",
-        string offset = null,
-        string orderBy = "focDate",
-        string sharedAppearances = null,
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null,
-        string upc = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| seriesId |  ``` Required ```  | The series ID. |
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| stories |  ``` Optional ```  | Return only comics which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-#### Example Usage
-
-```csharp
-string seriesId = "seriesId";
-string characters = "characters";
-string collaborators = "collaborators";
-string creators = "creators";
-var dateDescriptor = Models.DateDescriptorEnum?Helper.ParseString("lastWeek");
-string dateRange = "dateRange";
-string diamondCode = "diamondCode";
-string digitalId = "digitalId";
-string ean = "ean";
-string events = "events";
-string format = "comic";
-var formatType = Models.FormatTypeEnum?Helper.ParseString("collection");
-string hasDigitalIssue = "true";
-string isbn = "isbn";
-string issn = "issn";
-string issueNumber = "issueNumber";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string noVariants = "true";
-string offset = "offset";
-string orderBy = "focDate";
-string sharedAppearances = "sharedAppearances";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-string upc = "upc";
-
-Models.ComicDataWrapperModel result = await comics.GetComicsCollectionBySeriesId(seriesId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, sharedAppearances, startYear, stories, title, titleStartsWith, upc);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_comics_collection_by_story_id"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.ComicsController.GetComicsCollectionByStoryId") GetComicsCollectionByStoryId
-
-> getComicsCollectionByStoryId
-
-
-```csharp
-Task<Models.ComicDataWrapperModel> GetComicsCollectionByStoryId(
-        string storyId,
-        string characters = null,
-        string collaborators = null,
-        string creators = null,
-        Models.DateDescriptorEnum? dateDescriptor = null,
-        string dateRange = null,
-        string diamondCode = null,
-        string digitalId = null,
-        string ean = null,
-        string events = null,
-        string format = "comic",
-        Models.FormatTypeEnum? formatType = null,
-        string hasDigitalIssue = "true",
-        string isbn = null,
-        string issn = null,
-        string issueNumber = null,
-        string limit = null,
-        string modifiedSince = null,
-        string noVariants = "true",
-        string offset = null,
-        string orderBy = "focDate",
-        string series = null,
-        string sharedAppearances = null,
-        string startYear = null,
-        string title = null,
-        string titleStartsWith = null,
-        string upc = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| characters |  ``` Optional ```  | Return only comics which feature the specified characters (accepts a comma-separated list of ids). |
-| collaborators |  ``` Optional ```  | Return only comics in which the specified creators worked together (for example in which BOTH Stan Lee and Jack Kirby did work). |
-| creators |  ``` Optional ```  | Return only comics which feature work by the specified creators (accepts a comma-separated list of ids). |
-| dateDescriptor |  ``` Optional ```  | Return comics within a predefined date range. |
-| dateRange |  ``` Optional ```  | Return comics within a predefined date range.  Dates must be specified as date1,date2 (e.g. 2013-01-01,2013-01-02).  Dates are preferably formatted as YYYY-MM-DD but may be sent as any common date format. |
-| diamondCode |  ``` Optional ```  | Filter by diamond code. |
-| digitalId |  ``` Optional ```  | Filter by digital comic id. |
-| ean |  ``` Optional ```  | Filter by EAN. |
-| events |  ``` Optional ```  | Return only comics which take place in the specified events (accepts a comma-separated list of ids). |
-| format |  ``` Optional ```  ``` DefaultValue ```  | Filter by the issue format (e.g. comic, digital comic, hardcover). (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| formatType |  ``` Optional ```  | Filter by the issue format type (comic or collection). |
-| hasDigitalIssue |  ``` Optional ```  ``` DefaultValue ```  | Include only results which are available digitally. (Acceptable values are: "true") |
-| isbn |  ``` Optional ```  | Filter by ISBN. |
-| issn |  ``` Optional ```  | Filter by ISSN. |
-| issueNumber |  ``` Optional ```  | Return only issues in series whose issue number matches the input. |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only comics which have been modified since the specified date. |
-| noVariants |  ``` Optional ```  ``` DefaultValue ```  | Exclude variant comics from the result set. (Acceptable values are: "true") |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "focDate", "onsaleDate", "title", "issueNumber", "modified", "-focDate", "-onsaleDate", "-title", "-issueNumber", "-modified") |
-| series |  ``` Optional ```  | Return only comics which are part of the specified series (accepts a comma-separated list of ids). |
-| sharedAppearances |  ``` Optional ```  | Return only comics in which the specified characters appear together (for example in which BOTH Spider-Man and Wolverine appear). |
-| startYear |  ``` Optional ```  | Return only issues in series whose start year matches the input. |
-| title |  ``` Optional ```  | Return only issues in series whose title matches the input. |
-| titleStartsWith |  ``` Optional ```  | Return only issues in series whose title starts with the input. |
-| upc |  ``` Optional ```  | Filter by UPC. |
-
-
-#### Example Usage
-
-```csharp
-string storyId = "storyId";
-string characters = "characters";
-string collaborators = "collaborators";
-string creators = "creators";
-var dateDescriptor = Models.DateDescriptorEnum?Helper.ParseString("lastWeek");
-string dateRange = "dateRange";
-string diamondCode = "diamondCode";
-string digitalId = "digitalId";
-string ean = "ean";
-string events = "events";
-string format = "comic";
-var formatType = Models.FormatTypeEnum?Helper.ParseString("collection");
-string hasDigitalIssue = "true";
-string isbn = "isbn";
-string issn = "issn";
-string issueNumber = "issueNumber";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string noVariants = "true";
-string offset = "offset";
-string orderBy = "focDate";
-string series = "series";
-string sharedAppearances = "sharedAppearances";
-string startYear = "startYear";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-string upc = "upc";
-
-Models.ComicDataWrapperModel result = await comics.GetComicsCollectionByStoryId(storyId, characters, collaborators, creators, dateDescriptor, dateRange, diamondCode, digitalId, ean, events, format, formatType, hasDigitalIssue, isbn, issn, issueNumber, limit, modifiedSince, noVariants, offset, orderBy, series, sharedAppearances, startYear, title, titleStartsWith, upc);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-[Back to List of Controllers](#list_of_controllers)
-
-## <a name="series_controller"></a>![Class: ](https://apidocs.io/img/class.png "ACME.CORP.API.Controllers.SeriesController") SeriesController
-
-### Get singleton instance
-
-The singleton instance of the ``` SeriesController ``` class can be accessed from the API Client.
-
-```csharp
-SeriesController series = client.Series;
-```
-
-### <a name="get_series_individual"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.SeriesController.GetSeriesIndividual") GetSeriesIndividual
-
-> getSeriesIndividual
-
-
-```csharp
-Task<Models.SeriesModel> GetSeriesIndividual(string seriesId)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| seriesId |  ``` Required ```  | Filter by series title. |
-
-
-#### Example Usage
-
-```csharp
-string seriesId = "seriesId";
-
-Models.SeriesModel result = await series.GetSeriesIndividual(seriesId);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 404 | Series not found. |
-
-
-### <a name="get_character_series_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.SeriesController.GetCharacterSeriesCollection") GetCharacterSeriesCollection
-
-> getCharacterSeriesCollection
-
-
-```csharp
-Task<Models.SeriesDataWrapperModel> GetCharacterSeriesCollection(
-        string characterId,
-        string comics = null,
-        string contains = "comic",
-        string creators = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "title",
-        string seriesType = "collection",
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characterId |  ``` Required ```  | The character ID |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| creators |  ``` Optional ```  | Return only series which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only series which have comics that take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| stories |  ``` Optional ```  | Return only series which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Filter by series title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-#### Example Usage
-
-```csharp
-string characterId = "characterId";
-string comics = "comics";
-string contains = "comic";
-string creators = "creators";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "title";
-string seriesType = "collection";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-
-Models.SeriesDataWrapperModel result = await series.GetCharacterSeriesCollection(characterId, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_creator_series_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.SeriesController.GetCreatorSeriesCollection") GetCreatorSeriesCollection
-
-> getCreatorSeriesCollection
-
-
-```csharp
-Task<Models.SeriesDataWrapperModel> GetCreatorSeriesCollection(
-        string creatorId,
-        string characters = null,
-        string comics = null,
-        string contains = "comic",
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "title",
-        string seriesType = "collection",
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| creatorId |  ``` Required ```  | The creator ID. |
-| characters |  ``` Optional ```  | Return only series which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| events |  ``` Optional ```  | Return only series which have comics that take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| stories |  ``` Optional ```  | Return only series which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Filter by series title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-#### Example Usage
-
-```csharp
-string creatorId = "creatorId";
-string characters = "characters";
-string comics = "comics";
-string contains = "comic";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "title";
-string seriesType = "collection";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-
-Models.SeriesDataWrapperModel result = await series.GetCreatorSeriesCollection(creatorId, characters, comics, contains, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_event_series_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.SeriesController.GetEventSeriesCollection") GetEventSeriesCollection
-
-> getEventSeriesCollection
-
-
-```csharp
-Task<Models.SeriesDataWrapperModel> GetEventSeriesCollection(
-        string eventId,
-        string characters = null,
-        string comics = null,
-        string contains = "comic",
-        string creators = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "title",
-        string seriesType = "collection",
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| eventId |  ``` Required ```  | The event ID. |
-| characters |  ``` Optional ```  | Return only series which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| creators |  ``` Optional ```  | Return only series which feature work by the specified creators (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| stories |  ``` Optional ```  | Return only series which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Filter by series title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-#### Example Usage
-
-```csharp
-string eventId = "eventId";
-string characters = "characters";
-string comics = "comics";
-string contains = "comic";
-string creators = "creators";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "title";
-string seriesType = "collection";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-
-Models.SeriesDataWrapperModel result = await series.GetEventSeriesCollection(eventId, characters, comics, contains, creators, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_series_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.SeriesController.GetSeriesCollection") GetSeriesCollection
-
-> getSeriesCollection
-
-
-```csharp
-Task<Models.SeriesDataWrapperModel> GetSeriesCollection(
-        string characters = null,
-        string comics = null,
-        string contains = "comic",
-        string creators = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "title",
-        string seriesType = "collection",
-        string startYear = null,
-        string stories = null,
-        string title = null,
-        string titleStartsWith = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| characters |  ``` Optional ```  | Return only series which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| creators |  ``` Optional ```  | Return only series which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only series which have comics that take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| stories |  ``` Optional ```  | Return only series which contain the specified stories (accepts a comma-separated list of ids). |
-| title |  ``` Optional ```  | Return only series matching the specified title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-#### Example Usage
-
-```csharp
-string characters = "characters";
-string comics = "comics";
-string contains = "comic";
-string creators = "creators";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "title";
-string seriesType = "collection";
-string startYear = "startYear";
-string stories = "stories";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-
-Models.SeriesDataWrapperModel result = await series.GetSeriesCollection(characters, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, stories, title, titleStartsWith);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
-
-
-### <a name="get_story_series_collection"></a>![Method: ](https://apidocs.io/img/method.png "ACME.CORP.API.Controllers.SeriesController.GetStorySeriesCollection") GetStorySeriesCollection
-
-> getStorySeriesCollection
-
-
-```csharp
-Task<Models.SeriesDataWrapperModel> GetStorySeriesCollection(
-        string storyId,
-        string characters = null,
-        string comics = null,
-        string contains = "comic",
-        string creators = null,
-        string events = null,
-        string limit = null,
-        string modifiedSince = null,
-        string offset = null,
-        string orderBy = "title",
-        string seriesType = "collection",
-        string startYear = null,
-        string title = null,
-        string titleStartsWith = null)
-```
-
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| storyId |  ``` Required ```  | The story ID. |
-| characters |  ``` Optional ```  | Return only series which feature the specified characters (accepts a comma-separated list of ids). |
-| comics |  ``` Optional ```  | Return only series which contain the specified comics (accepts a comma-separated list of ids). |
-| contains |  ``` Optional ```  ``` DefaultValue ```  | Return only series containing one or more comics with the specified format. (Acceptable values are: "comic", "magazine", "trade paperback", "hardcover", "digest", "graphic novel", "digital comic", "infinite comic") |
-| creators |  ``` Optional ```  | Return only series which feature work by the specified creators (accepts a comma-separated list of ids). |
-| events |  ``` Optional ```  | Return only series which have comics that take place during the specified events (accepts a comma-separated list of ids). |
-| limit |  ``` Optional ```  | Limit the result set to the specified number of resources. |
-| modifiedSince |  ``` Optional ```  | Return only series which have been modified since the specified date. |
-| offset |  ``` Optional ```  | Skip the specified number of resources in the result set. |
-| orderBy |  ``` Optional ```  ``` DefaultValue ```  | Order the result set by a field or fields. Add a "-" to the value sort in descending order. Multiple values are given priority in the order in which they are passed. (Acceptable values are: "title", "modified", "startYear", "-title", "-modified", "-startYear") |
-| seriesType |  ``` Optional ```  ``` DefaultValue ```  | Filter the series by publication frequency type. (Acceptable values are: "collection", "one shot", "limited", "ongoing") |
-| startYear |  ``` Optional ```  | Return only series matching the specified start year. |
-| title |  ``` Optional ```  | Filter by series title. |
-| titleStartsWith |  ``` Optional ```  | Return series with titles that begin with the specified string (e.g. Sp). |
-
-
-#### Example Usage
-
-```csharp
-string storyId = "storyId";
-string characters = "characters";
-string comics = "comics";
-string contains = "comic";
-string creators = "creators";
-string events = "events";
-string limit = "limit";
-string modifiedSince = "modifiedSince";
-string offset = "offset";
-string orderBy = "title";
-string seriesType = "collection";
-string startYear = "startYear";
-string title = "title";
-string titleStartsWith = "titleStartsWith";
-
-Models.SeriesDataWrapperModel result = await series.GetStorySeriesCollection(storyId, characters, comics, contains, creators, events, limit, modifiedSince, offset, orderBy, seriesType, startYear, title, titleStartsWith);
-
-```
-
-#### Errors
-
-| Error Code | Error Description |
-|------------|-------------------|
-| 409 | Limit greater than 100. |
+| 400 | Invalid username supplied |
+| 404 | User not found |
 
 
 [Back to List of Controllers](#list_of_controllers)
